@@ -1169,16 +1169,37 @@ const lessons = [
             </section>
         `
     },
+    // Lesson Data (100 lessons)
+const lessons = [
+    // Lessons 1–74 (provided earlier, abbreviated here for brevity)
+    ...[
+        {
+            title: "Lesson 1: Introduction to HTML",
+            content: `
+                <p>HTML (HyperText Markup Language) is the backbone of web pages, structuring content like text, images, and links. It uses tags to define elements, creating a tree-like structure called the DOM (Document Object Model). HTML5, the latest version, adds semantic tags and multimedia support, enabling accessible, interactive sites. Learning HTML unlocks web development’s foundation.</p>
+                <p><strong>Code Example:</strong></p>
+                <pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello, World!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p><strong>In Action:</strong></p>
+                <section class="demo-box">
+                    <p>Hello, World!</p>
+                </section>
+            `
+        },
+        // ... (Lessons 2–74 omitted for brevity, following the same structure)
+    ],
+    // Lesson 75 onwards
     {
         title: "Lesson 75: Embedded Objects with <object>",
         content: `
             <p>The <code>&lt;object&gt;</code> tag embeds multimedia, like PDFs or Flash, with <code>data</code> for the source. It’s a block-level element, supporting fallback content if the object fails. It’s less common now but useful for specific plugins. Objects add versatile media support.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<object data="file.pdf" type="application/pdf">
-    <p>Fallback text</p>
-</object>
-            </pre>
+            <pre><code>&lt;object data="file.pdf" type="application/pdf"&gt;
+    &lt;p&gt;Fallback text&lt;/p&gt;
+&lt;/object&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Object placeholder - requires a source]</p>
@@ -1190,11 +1211,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;source&gt;</code> tag specifies media files for <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code>, allowing multiple formats. It’s a self-closing element, using <code>src</code> and <code>type</code>. It ensures compatibility across browsers. Sources optimize media delivery and accessibility.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<video controls>
-    <source src="clip.mp4" type="video/mp4">
-</video>
-            </pre>
+            <pre><code>&lt;video controls&gt;
+    &lt;source src="clip.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Video placeholder - requires source files]</p>
@@ -1206,11 +1225,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;track&gt;</code> tag adds subtitles or captions to <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code>, using <code>src</code> for WebVTT files. It’s self-closing, with <code>kind</code> (e.g., <code>subtitles</code>) and <code>srclang</code>. It boosts accessibility for diverse users. Tracks enhance media comprehension.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<video controls>
-    <track src="subs.vtt" kind="subtitles" srclang="en">
-</video>
-            </pre>
+            <pre><code>&lt;video controls&gt;
+    &lt;track src="subs.vtt" kind="subtitles" srclang="en"&gt;
+&lt;/video&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Video with captions placeholder]</p>
@@ -1222,9 +1239,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;embed&gt;</code> tag inserts external content, like Flash or applets, without fallback. It’s a self-closing, block-level element, using <code>src</code> and <code>type</code>. It’s less used today due to security but fits specific cases. Embeds add quick multimedia integration.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<embed src="animation.swf" type="application/x-shockwave-flash">
-            </pre>
+            <pre><code>&lt;embed src="animation.swf" type="application/x-shockwave-flash"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Embed placeholder - requires a source]</p>
@@ -1549,6 +1564,426 @@ const lessons = [
 
 // Library Data (100 HTML tags)
 const library = [
+    { tag: "&lt;a&gt;", description: "Creates a hyperlink, using href for the URL." },
+    { tag: "&lt;abbr&gt;", description: "Marks an abbreviation, with title for expansion." },
+    { tag: "&lt;address&gt;", description: "Provides contact information, often italicized." },
+    { tag: "&lt;area&gt;", description: "Defines clickable areas in an image map." },
+    { tag: "&lt;article&gt;", description: "Represents standalone content, like a blog post." },
+    { tag: "&lt;aside&gt;", description: "Holds supplementary content, like sidebars." },
+    { tag: "&lt;audio&gt;", description: "Embeds sound, with controls for playback." },
+    { tag: "&lt;b&gt;", description: "Applies bold styling, non-semantic." },
+    { tag: "&lt;base&gt;", description: "Sets the base URL for relative links." },
+    { tag: "&lt;bdi&gt;", description: "Isolates text for bidirectional formatting." },
+    { tag: "&lt;bdo&gt;", description: "Overrides text direction (ltr or rtl)." },
+    { tag: "&lt;blockquote&gt;", description: "Indicates a lengthy quotation, often indented." },
+    { tag: "&lt;body&gt;", description: "Contains all visible page content." },
+    { tag: "&lt;br&gt;", description: "Inserts a line break within text." },
+    { tag: "&lt;button&gt;", description: "Creates a clickable button, often in forms." },
+    { tag: "&lt;canvas&gt;", description: "Provides a drawing area for JavaScript graphics." },
+    { tag: "&lt;caption&gt;", description: "Adds a title to a table." },
+    { tag: "&lt;cite&gt;", description: "References a creative work, like a book." },
+    { tag: "&lt;code&gt;", description: "Marks inline code snippets, monospace font." },
+    { tag: "&lt;col&gt;", description: "Defines column properties in a table." },
+    { tag: "&lt;colgroup&gt;", description: "Groups columns for styling in a table." },
+    { tag: "&lt;data&gt;", description: "Links content with a machine-readable value." },
+    { tag: "&lt;datalist&gt;", description: "Provides autocomplete options for inputs." },
+    { tag: "&lt;dd&gt;", description: "Describes a term in a description list." },
+    { tag: "&lt;del&gt;", description: "Marks text as deleted, often strikethrough." },
+    { tag: "&lt;details&gt;", description: "Creates a collapsible section with a toggle." },
+    { tag: "&lt;dfn&gt;", description: "Marks a term being defined." },
+    { tag: "&lt;dialog&gt;", description: "Defines a popup or modal dialog." },
+    { tag: "&lt;div&gt;", description: "A generic block container for content." },
+    { tag: "&lt;dl&gt;", description: "Creates a description list of terms and details." },
+    { tag: "&lt;dt&gt;", description: "Defines a term in a description list." },
+    { tag: "&lt;em&gt;", description: "Emphasizes text, typically italicized." },
+    { tag: "&lt;embed&gt;", description: "Inserts external content, like applets." },
+    { tag: "&lt;fieldset&gt;", description: "Groups form controls with a border." },
+    { tag: "&lt;figcaption&gt;", description: "Captions a figure element." },
+    { tag: "&lt;figure&gt;", description: "Groups media with an optional caption." },
+    { tag: "&lt;footer&gt;", description: "Holds footer content, like copyrights." },
+    { tag: "&lt;form&gt;", description: "Creates a user input form." },
+    { tag: "&lt;h1&gt;", description: "Defines the top-level heading." },
+    { tag: "&lt;h2&gt;", description: "Defines a second-level heading." },
+    { tag: "&lt;h3&gt;", description: "Defines a third-level heading." },
+    { tag: "&lt;h4&gt;", description: "Defines a fourth-level heading." },
+    { tag: "&lt;h5&gt;", description: "Defines a fifth-level heading." },
+    { tag: "&lt;h6&gt;", description: "Defines a sixth-level heading." },
+    { tag: "&lt;head&gt;", description: "Contains metadata about the document." },
+    { tag: "&lt;header&gt;", description: "Marks introductory content, like navbars." },
+    { tag: "&lt;hr&gt;", description: "Creates a thematic break, like a line." },
+    { tag: "&lt;html&gt;", description: "The root element of an HTML document." },
+    { tag: "&lt;i&gt;", description: "Applies italic styling, non-semantic." },
+    { tag: "&lt;iframe&gt;", description: "Embeds external content in a frame." },
+    { tag: "&lt;img&gt;", description: "Embeds an image, with alt for accessibility." },
+    { tag: "&lt;input&gt;", description: "Creates form input fields, like text or radio." },
+    { tag: "&lt;ins&gt;", description: "Marks text as inserted, often underlined." },
+    { tag: "&lt;kbd&gt;", description: "Indicates keyboard input, like shortcuts." },
+    { tag: "&lt;label&gt;", description: "Describes a form input for accessibility." },
+    { tag: "&lt;legend&gt;", description: "Captions a fieldset in a form." },
+    { tag: "&lt;li&gt;", description: "Defines a list item in ul or ol." },
+    { tag: "&lt;link&gt;", description: "Connects external resources, like CSS." },
+    { tag: "&lt;main&gt;", description: "Holds the primary content of a page." },
+    { tag: "&lt;map&gt;", description: "Defines an image map with clickable areas." },
+    { tag: "&lt;mark&gt;", description: "Highlights text for emphasis." },
+    { tag: "&lt;meta&gt;", description: "Provides metadata, like charset." },
+    { tag: "&lt;meter&gt;", description: "Displays a scalar value in a range." },
+    { tag: "&lt;nav&gt;", description: "Marks navigation links, like menus." },
+    { tag: "&lt;noscript&gt;", description: "Shows content if JavaScript is disabled." },
+    { tag: "&lt;object&gt;", description: "Embeds multimedia, like PDFs." },
+    { tag: "&lt;ol&gt;", description: "Creates an ordered, numbered list." },
+    { tag: "&lt;optgroup&gt;", description: "Groups options in a select menu." },
+    { tag: "&lt;option&gt;", description: "Defines an item in a select or datalist." },
+    { tag: "&lt;output&gt;", description: "Shows form calculation results." },
+    { tag: "&lt;p&gt;", description: "Defines a paragraph of text." },
+    { tag: "&lt;param&gt;", description: "Sets parameters for an object element." },
+    { tag: "&lt;picture&gt;", description: "Provides multiple image sources." },
+    { tag: "&lt;pre&gt;", description: "Displays preformatted text with spacing." },
+    { tag: "&lt;progress&gt;", description: "Shows task completion, like downloads." },
+    { tag: "&lt;q&gt;", description: "Marks short, inline quotations." },
+    { tag: "&lt;rp&gt;", description: "Provides fallback for ruby annotations." },
+    { tag: "&lt;rt&gt;", description: "Defines ruby text for annotations." },
+    { tag: "&lt;ruby&gt;", description: "Marks text with pronunciation annotations." },
+    { tag: "&lt;s&gt;", description: "Marks text as no longer relevant." },
+    { tag: "&lt;samp&gt;", description: "Shows sample program output." },
+    { tag: "&lt;script&gt;", description: "Embeds or links JavaScript code." },
+    { tag: "&lt;section&gt;", description: "Groups related content, like chapters." },
+    { tag: "&lt;select&gt;", description: "Creates a dropdown menu." },
+    { tag: "&lt;small&gt;", description: "Marks fine print or side comments." },
+    { tag: "&lt;source&gt;", description: "Specifies media sources for audio/video." },
+    { tag: "&lt;span&gt;", description: "A generic inline container." },
+    { tag: "&lt;strong&gt;", description: "Marks important text, typically bold." },
+    { tag: "&lt;style&gt;", description: "Embeds CSS styles in the document." },
+    { tag: "&lt;sub&gt;", description: "Lowers text as a subscript." },
+    { tag: "&lt;summary&gt;", description: "Toggles a details element’s content." },
+    { tag: "&lt;sup&gt;", description: "Raises text as a superscript." },
+    { tag: "&lt;svg&gt;", description: "Embeds scalable vector graphics." },
+    { tag: "&lt;table&gt;", description: "Organizes data in rows and columns." },
+    { tag: "&lt;tbody&gt;", description: "Groups table body rows." },
+    { tag: "&lt;td&gt;", description: "Defines a table data cell." },
+    { tag: "&lt;template&gt;", description: "Holds reusable content for JavaScript." },
+    { tag: "&lt;textarea&gt;", description: "Creates a multi-line text input." },
+    { tag: "&lt;tfoot&gt;", description: "Groups table footer rows." },
+    { tag: "&lt;th&gt;", description: "Defines a table header cell." },
+    { tag: "&lt;thead&gt;", description: "Groups table header rows." },
+    { tag: "&lt;time&gt;", description: "Marks a date or time." },
+    { tag: "&lt;title&gt;", description: "Sets the page title in the browser." },
+    { tag: "&lt;tr&gt;", description: "Defines a table row." },
+    { tag: "&lt;track&gt;", description: "Adds captions to audio/video." },
+    { tag: "&lt;u&gt;", description: "Applies underline styling, non-semantic." },
+    { tag: "&lt;ul&gt;", description: "Creates an unordered, bulleted list." },
+    { tag: "&lt;var&gt;", description: "Denotes a variable in code or math." },
+    { tag: "&lt;video&gt;", description: "Embeds video with playback controls." },
+    { tag: "&lt;wbr&gt;", description: "Suggests a word break opportunity." }
+];
+
+// Test Questions (50 questions)
+const testQuestions = [
+    {
+        question: "What does HTML stand for?",
+        options: ["HyperText Markup Language", "HighText Machine Language", "HyperTool Multi Language", "HyperText Markdown Language"],
+        answer: 0
+    },
+    {
+        question: "Which tag is the root element of an HTML document?",
+        options: ["&lt;body&gt;", "&lt;html&gt;", "&lt;head&gt;", "&lt;div&gt;"],
+        answer: 1
+    },
+    {
+        question: "What attribute specifies the character encoding?",
+        options: ["lang", "charset", "encoding", "type"],
+        answer: 1
+    },
+    {
+        question: "Which tag contains visible content?",
+        options: ["&lt;head&gt;", "&lt;meta&gt;", "&lt;body&gt;", "&lt;title&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag defines the largest heading?",
+        options: ["&lt;h6&gt;", "&lt;h1&gt;", "&lt;h3&gt;", "&lt;header&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag creates a paragraph?",
+        options: ["&lt;p&gt;", "&lt;div&gt;", "&lt;span&gt;", "&lt;text&gt;"],
+        answer: 0
+    },
+    {
+        question: "What tag makes a hyperlink?",
+        options: ["&lt;link&gt;", "&lt;a&gt;", "&lt;href&gt;", "&lt;url&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which attribute provides image descriptions?",
+        options: ["src", "href", "alt", "title"],
+        answer: 2
+    },
+    {
+        question: "What tag creates an unordered list?",
+        options: ["&lt;ol&gt;", "&lt;ul&gt;", "&lt;li&gt;", "&lt;list&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag is a list item?",
+        options: ["&lt;ul&gt;", "&lt;ol&gt;", "&lt;li&gt;", "&lt;dl&gt;"],
+        answer: 2
+    },
+    {
+        question: "What is a generic block container?",
+        options: ["&lt;span&gt;", "&lt;div&gt;", "&lt;p&gt;", "&lt;section&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag is an inline container?",
+        options: ["&lt;div&gt;", "&lt;section&gt;", "&lt;span&gt;", "&lt;article&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag emphasizes text as bold?",
+        options: ["&lt;em&gt;", "&lt;strong&gt;", "&lt;i&gt;", "&lt;b&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag inserts a line break?",
+        options: ["&lt;hr&gt;", "&lt;br&gt;", "&lt;break&gt;", "&lt;lb&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag creates a thematic break?",
+        options: ["&lt;br&gt;", "&lt;hr&gt;", "&lt;div&gt;", "&lt;section&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines introductory content?",
+        options: ["&lt;footer&gt;", "&lt;header&gt;", "&lt;main&gt;", "&lt;nav&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag holds footer content?",
+        options: ["&lt;header&gt;", "&lt;main&gt;", "&lt;footer&gt;", "&lt;section&gt;"],
+        answer: 2
+    },
+    {
+        question: "Which tag marks navigation links?",
+        options: ["&lt;nav&gt;", "&lt;link&gt;", "&lt;a&gt;", "&lt;menu&gt;"],
+        answer: 0
+    },
+    {
+        question: "What tag represents standalone content?",
+        options: ["&lt;section&gt;", "&lt;article&gt;", "&lt;div&gt;", "&lt;main&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag groups related content?",
+        options: ["&lt;article&gt;", "&lt;div&gt;", "&lt;section&gt;", "&lt;aside&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag holds primary content?",
+        options: ["&lt;header&gt;", "&lt;main&gt;", "&lt;footer&gt;", "&lt;body&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag creates a form?",
+        options: ["&lt;input&gt;", "&lt;form&gt;", "&lt;button&gt;", "&lt;label&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag creates a form input?",
+        options: ["&lt;form&gt;", "&lt;input&gt;", "&lt;button&gt;", "&lt;select&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag describes an input?",
+        options: ["&lt;label&gt;", "&lt;legend&gt;", "&lt;caption&gt;", "&lt;title&gt;"],
+        answer: 0
+    },
+    {
+        question: "What tag makes a clickable button?",
+        options: ["&lt;input&gt;", "&lt;button&gt;", "&lt;a&gt;", "&lt;div&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag allows multi-line input?",
+        options: ["&lt;input&gt;", "&lt;textarea&gt;", "&lt;select&gt;", "&lt;output&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag creates a dropdown menu?",
+        options: ["&lt;input&gt;", "&lt;select&gt;", "&lt;option&gt;", "&lt;datalist&gt;"],
+        answer: 1
+    },
+        [
+        {
+            question: "Which tag defines dropdown items?",
+            options: ["<select>", "<option>", "<datalist>", "<li>"],
+            answer: 1
+        },
+        {
+            question: "What tag organizes data in a grid?",
+            options: ["<div>", "<table>", "<grid>", "<section>"],
+            answer: 1
+        },
+        {
+            question: "Which tag defines a table row?",
+            options: ["<td>", "<th>", "<tr>", "<table>"],
+            answer: 2
+        },
+        {
+            question: "What tag is a table data cell?",
+            options: ["<tr>", "<td>", "<th>", "<caption>"],
+            answer: 1
+        },
+        {
+            question: "Which tag defines a table header?",
+            options: ["<td>", "<tr>", "<th>", "<thead>"],
+            answer: 2
+        },
+        {
+            question: "What tag adds a table title?",
+            options: ["<title>", "<caption>", "<label>", "<legend>"],
+            answer: 1
+        },
+        {
+            question: "Which tag groups table body rows?",
+            options: ["<thead>", "<tbody>", "<tfoot>", "<table>"],
+            answer: 1
+        },
+        {
+            question: "What tag groups table header rows?",
+            options: ["<tbody>", "<thead>", "<tfoot>", "<tr>"],
+            answer: 1
+        },
+        {
+            question: "Which tag embeds audio?",
+            options: ["<video>", "<audio>", "<media>", "<source>"],
+            answer: 1
+        },
+        {
+            question: "What tag embeds video?",
+            options: ["<audio>", "<video>", "<iframe>", "<object>"],
+            answer: 1
+        },
+        {
+            question: "Which tag embeds external content?",
+            options: ["<video>", "<audio>", "<iframe>", "<canvas>"],
+            answer: 2
+        },
+        {
+            question: "What tag provides metadata?",
+            options: ["<head>", "<meta>", "<title>", "<link>"],
+            answer: 1
+        },
+        {
+            question: "Which tag sets the page title?",
+            options: ["<meta>", "<title>", "<head>", "<header>"],
+            answer: 1
+        },
+        {
+            question: "What tag links to CSS?",
+            options: ["<style>", "<script>", "<link>", "<href>"],
+            answer: 2
+        },
+        {
+            question: "Which is an HTML comment?",
+            options: ["// Comment", "<!-- Comment -->", "# Comment", "/* Comment */"],
+            answer: 1
+        },
+        {
+            question: "What attribute is unique per element?",
+            options: ["class", "id", "name", "type"],
+            answer: 1
+        },
+        {
+            question: "Which attribute groups elements?",
+            options: ["id", "class", "name", "for"],
+            answer: 1
+        },
+        {
+            question: "What attribute links an <a> tag?",
+            options: ["src", "href", "alt", "link"],
+            answer: 1
+        },
+        {
+            question: "Which attribute aids image accessibility?",
+            options: ["src", "href", "alt", "title"],
+            answer: 2
+        },
+        {
+            question: "What attribute sets media paths?",
+            options: ["href", "src", "alt", "data"],
+            answer: 1
+        },
+        {
+            question: "Which tag creates a collapsible section?",
+            options: ["<dialog>", "<details>", "<summary>", "<aside>"],
+            answer: 1
+        },
+        {
+            question: "What tag shows a scalar value?",
+            options: ["<progress>", "<meter>", "<output>", "<data>"],
+            answer: 1
+        },
+        {
+            question: "Which tag highlights text?",
+            options: ["<strong>", "<em>", "<mark>", "<b>"],
+            answer: 2
+        },
+        {
+            question: "What tag marks deleted text?",
+            options: ["<ins>", "<del>", "<s>", "<mark>"],
+            answer: 1
+        },
+        {
+            question: "Which tag marks inserted text?",
+            options: ["<del>", "<ins>", "<mark>", "<strong>"],
+            answer: 1
+        },
+        {
+            question: "What tag provides contact information?",
+            options: ["<footer>", "<address>", "<contact>", "<email>"],
+            answer: 1
+        },
+        {
+            question: "Which tag references a creative work?",
+            options: ["<quote>", "<cite>", "<q>", "<ref>"],
+            answer: 1
+        },
+        {
+            question: "What tag isolates bidirectional text?",
+            options: ["<bdo>", "<bdi>", "<rtl>", "<ltr>"],
+            answer: 1
+        },
+        {
+            question: "Which tag overrides text direction?",
+            options: ["<bdi>", "<bdo>", "<dir>", "<text>"],
+            answer: 1
+        },
+        {
+            question: "What tag marks a specific date or time?",
+            options: ["<date>", "<time>", "<calendar>", "<schedule>"],
+            answer: 1
+        },
+        {
+            question: "Which tag provides ruby annotations?",
+            options: ["<rt>", "<ruby>", "<rp>", "<rb>"],
+            answer: 1
+        },
+        {
+            question: "What tag defines ruby text?",
+            options: ["<ruby>", "<rt>", "<rp>", "<rb>"],
+            answer: 1
+        },
+        {
+            question: "Which tag embeds vector graphics?",
+            options: ["<canvas>", "<svg>", "<img>", "<vector>"],
+            answer: 1
+        }
+    ]
+];
+
+// Library Data (100 HTML tags)
+const library = [
     { tag: "<a>", description: "Creates a hyperlink, using href for the URL." },
     { tag: "<abbr>", description: "Marks an abbreviation, with title for expansion." },
     { tag: "<address>", description: "Provides contact information, often italicized." },
@@ -1659,260 +2094,6 @@ const library = [
     { tag: "<var>", description: "Denotes a variable in code or math." },
     { tag: "<video>", description: "Embeds video with playback controls." },
     { tag: "<wbr>", description: "Suggests a word break opportunity." }
-];
-
-// Test Questions (50 questions)
-const testQuestions = [
-    {
-        question: "What does HTML stand for?",
-        options: ["HyperText Markup Language", "HighText Machine Language", "HyperTool Multi Language", "HyperText Markdown Language"],
-        answer: 0
-    },
-    {
-        question: "Which tag is the root element of an HTML document?",
-        options: ["<body>", "<html>", "<head>", "<div>"],
-        answer: 1
-    },
-    {
-        question: "What attribute specifies the character encoding?",
-        options: ["lang", "charset", "encoding", "type"],
-        answer: 1
-    },
-    {
-        question: "Which tag contains visible content?",
-        options: ["<head>", "<meta>", "<body>", "<title>"],
-        answer: 2
-    },
-    {
-        question: "What tag defines the largest heading?",
-        options: ["<h6>", "<h1>", "<h3>", "<header>"],
-        answer: 1
-    },
-    {
-        question: "Which tag creates a paragraph?",
-        options: ["<p>", "<div>", "<span>", "<text>"],
-        answer: 0
-    },
-    {
-        question: "What tag makes a hyperlink?",
-        options: ["<link>", "<a>", "<href>", "<url>"],
-        answer: 1
-    },
-    {
-        question: "Which attribute provides image descriptions?",
-        options: ["src", "href", "alt", "title"],
-        answer: 2
-    },
-    {
-        question: "What tag creates an unordered list?",
-        options: ["<ol>", "<ul>", "<li>", "<list>"],
-        answer: 1
-    },
-    {
-        question: "Which tag is a list item?",
-        options: ["<ul>", "<ol>", "<li>", "<dl>"],
-        answer: 2
-    },
-    {
-        question: "What is a generic block container?",
-        options: ["<span>", "<div>", "<p>", "<section>"],
-        answer: 1
-    },
-    {
-        question: "Which tag is an inline container?",
-        options: ["<div>", "<section>", "<span>", "<article>"],
-        answer: 2
-    },
-    {
-        question: "What tag emphasizes text as bold?",
-        options: ["<em>", "<strong>", "<i>", "<b>"],
-        answer: 1
-    },
-    {
-        question: "Which tag inserts a line break?",
-        options: ["<hr>", "<br>", "<break>", "<lb>"],
-        answer: 1
-    },
-    {
-        question: "What tag creates a thematic break?",
-        options: ["<br>", "<hr>", "<div>", "<section>"],
-        answer: 1
-    },
-    {
-        question: "Which tag defines introductory content?",
-        options: ["<footer>", "<header>", "<main>", "<nav>"],
-        answer: 1
-    },
-    {
-        question: "What tag holds footer content?",
-        options: ["<header>", "<main>", "<footer>", "<section>"],
-        answer: 2
-    },
-    {
-        question: "Which tag marks navigation links?",
-        options: ["<nav>", "<link>", "<a>", "<menu>"],
-        answer: 0
-    },
-    {
-        question: "What tag represents standalone content?",
-        options: ["<section>", "<article>", "<div>", "<main>"],
-        answer: 1
-    },
-    {
-        question: "Which tag groups related content?",
-        options: ["<article>", "<div>", "<section>", "<aside>"],
-        answer: 2
-    },
-    {
-        question: "What tag holds primary content?",
-        options: ["<header>", "<main>", "<footer>", "<body>"],
-        answer: 1
-    },
-    {
-        question: "Which tag creates a form?",
-        options: ["<input>", "<form>", "<button>", "<label>"],
-        answer: 1
-    },
-    {
-        question: "What tag creates a form input?",
-        options: ["<form>", "<input>", "<button>", "<select>"],
-        answer: 1
-    },
-    {
-        question: "Which tag describes an input?",
-        options: ["<label>", "<legend>", "<caption>", "<title>"],
-        answer: 0
-    },
-    {
-        question: "What tag makes a clickable button?",
-        options: ["<input>", "<button>", "<a>", "<div>"],
-        answer: 1
-    },
-    {
-        question: "Which tag allows multi-line input?",
-        options: ["<input>", "<textarea>", "<select>", "<output>"],
-        answer: 1
-    },
-    {
-        question: "What tag creates a dropdown menu?",
-        options: ["<input>", "<select>", "<option>", "<datalist>"],
-        answer: 1
-    },
-    {
-        question: "Which tag defines dropdown items?",
-        options: ["<select>", "<option>", "<datalist>", "<li>"],
-        answer: 1
-    },
-    {
-        question: "What tag organizes data in a grid?",
-        options: ["<div>", "<table>", "<grid>", "<section>"],
-        answer: 1
-    },
-    {
-        question: "Which tag defines a table row?",
-        options: ["<td>", "<th>", "<tr>", "<table>"],
-        answer: 2
-    },
-    {
-        question: "What tag is a table data cell?",
-        options: ["<tr>", "<td>", "<th>", "<caption>"],
-        answer: 1
-    },
-    {
-        question: "Which tag defines a table header?",
-        options: ["<td>", "<tr>", "<th>", "<thead>"],
-        answer: 2
-    },
-    {
-        question: "What tag adds a table title?",
-        options: ["<title>", "<caption>", "<label>", "<legend>"],
-        answer: 1
-    },
-    {
-        question: "Which tag groups table body rows?",
-        options: ["<thead>", "<tbody>", "<tfoot>", "<table>"],
-        answer: 1
-    },
-    {
-        question: "What tag groups table header rows?",
-        options: ["<tbody>", "<thead>", "<tfoot>", "<tr>"],
-        answer: 1
-    },
-    {
-        question: "Which tag embeds audio?",
-        options: ["<video>", "<audio>", "<media>", "<source>"],
-        answer: 1
-    },
-    {
-        question: "What tag embeds video?",
-        options: ["<audio>", "<video>", "<iframe>", "<object>"],
-        answer: 1
-    },
-    {
-        question: "Which tag embeds external content?",
-        options: ["<video>", "<audio>", "<iframe>", "<canvas>"],
-        answer: 2
-    },
-    {
-        question: "What tag provides metadata?",
-        options: ["<head>", "<meta>", "<title>", "<link>"],
-        answer: 1
-    },
-    {
-        question: "Which tag sets the page title?",
-        options: ["<meta>", "<title>", "<head>", "<header>"],
-        answer: 1
-    },
-    {
-        question: "What tag links to CSS?",
-        options: ["<style>", "<script>", "<link>", "<href>"],
-        answer: 2
-    },
-    {
-        question: "Which is an HTML comment?",
-        options: ["// Comment", "<!-- Comment -->", "# Comment", "/* Comment */"],
-        answer: 1
-    },
-    {
-        question: "What attribute is unique per element?",
-        options: ["class", "id", "name", "type"],
-        answer: 1
-    },
-    {
-        question: "Which attribute groups elements?",
-        options: ["id", "class", "name", "for"],
-        answer: 1
-    },
-    {
-        question: "What attribute links an <a> tag?",
-        options: ["src", "href", "alt", "link"],
-        answer: 1
-    },
-    {
-        question: "Which attribute aids image accessibility?",
-        options: ["src", "href", "alt", "title"],
-        answer: 2
-    },
-    {
-        question: "What attribute sets media paths?",
-        options: ["href", "src", "alt", "data"],
-        answer: 1
-    },
-    {
-        question: "Which tag creates a collapsible section?",
-        options: ["<dialog>", "<details>", "<summary>", "<aside>"],
-        answer: 1
-    },
-    {
-        question: "What tag shows a scalar value?",
-        options: ["<progress>", "<meter>", "<output>", "<data>"],
-        answer: 1
-    },
-    {
-        question: "Which tag highlights text?",
-        options: ["<strong>", "<em>", "<mark>", "<b>"],
-        answer: 2
-    }
 ];
 
 // Initialize State
