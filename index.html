@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="lessons" aria-label="View lessons">Lessons</button>
+            <button class="tab-btn" data-tab="test" aria-label="Take test">Test</button>
+            <button class="tab-btn" data-tab="library" aria-label="View HTML tag library">Library</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Lessons Section -->
+        <section id="lessons" class="tab-content active">
+            <div class="lesson-nav">
+                <button class="nav-btn" id="prev-lesson" aria-label="Previous lesson" disabled>Previous</button>
+                <h2 id="lesson-title"></h2>
+                <button class="nav-btn" id="next-lesson" aria-label="Next lesson">Next</button>
+            </div>
+            <div id="lesson-content" class="lesson-body"></div>
+            <div class="lesson-links">
+                <!-- Generated dynamically by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Test Section -->
+        <section id="test" class="tab-content">
+            <div class="test-nav">
+                <button class="nav-btn" id="prev-test" aria-label="Previous test page" disabled>Previous</button>
+                <span id="test-progress">Page 1 of 5</span>
+                <button class="nav-btn" id="next-test" aria-label="Next test page">Next</button>
+            </div>
+            <div id="test-content"></div>
+            <div id="test-summary" class="test-summary"></div>
+        </section>
+
+        <!-- Library Section -->
+        <section id="library" class="tab-content">
+            <input type="text" id="library-search" placeholder="Search tags..." aria-label="Search HTML tags">
+            <div id="library-content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Just Wise Love. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
