@@ -1382,13 +1382,11 @@ const lessons = [
     {
         title: "Lesson 79: Parameter Elements with <param>",
         content: `
-            <p>The <code><param></code> tag defines parameters for an <code><object></code> element, like settings for plugins. It’s a self-closing, void element, using <code>name</code> and <code>value</code> attributes. Though less common today, it’s useful for legacy multimedia or specific applets. Parameters customize embedded content behavior.</p>
+            <p>The <code>&lt;param&gt;</code> tag defines parameters for an <code>&lt;object&gt;</code> element, like settings for plugins. It’s a self-closing, void element, using <code>name</code> and <code>value</code> attributes. Though less common today, it’s useful for legacy multimedia or specific applets. Parameters customize embedded content behavior.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<object data="movie.swf">
-    <param name="autoplay" value="true">
-</object>
-            </pre>
+            <pre><code>&lt;object data="movie.swf"&gt;
+    &lt;param name="autoplay" value="true"&gt;
+&lt;/object&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Object with param placeholder - requires source]</p>
@@ -1398,11 +1396,9 @@ const lessons = [
     {
         title: "Lesson 80: Canvas Graphics with <canvas>",
         content: `
-            <p>The <code><canvas></code> tag creates a drawing area for JavaScript graphics, like charts or animations. It’s a block-level element, requiring <code>width</code> and <code>height</code>. Fallback content displays if unsupported. Canvas enables dynamic, interactive visuals.</p>
+            <p>The <code>&lt;canvas&gt;</code> tag creates a drawing area for JavaScript graphics, like charts or animations. It’s a block-level element, requiring <code>width</code> and <code>height</code>. Fallback content displays if unsupported. Canvas enables dynamic, interactive visuals.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<canvas id="myCanvas" width="200" height="100"></canvas>
-            </pre>
+            <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <canvas width="200" height="100">[Canvas not supported]</canvas>
@@ -1412,13 +1408,11 @@ const lessons = [
     {
         title: "Lesson 81: SVG Graphics with <svg>",
         content: `
-            <p>The <code><svg></code> tag embeds scalable vector graphics, ideal for icons or diagrams. It’s a block-level element, supporting shapes like <code><circle></code> or <code><path></code>. It’s accessible with <code>title</code> tags. SVG ensures crisp visuals across devices.</p>
+            <p>The <code>&lt;svg&gt;</code> tag embeds scalable vector graphics, ideal for icons or diagrams. It’s a block-level element, supporting shapes like <code>&lt;circle&gt;</code> or <code>&lt;path&gt;</code>. It’s accessible with <code>title</code> tags. SVG ensures crisp visuals across devices.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<svg width="100" height="100">
-    <circle cx="50" cy="50" r="40" fill="blue"/>
-</svg>
-            </pre>
+            <pre><code>&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" fill="blue"/&gt;
+&lt;/svg&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <svg width="100" height="100">
@@ -1430,11 +1424,9 @@ const lessons = [
     {
         title: "Lesson 82: Progress Bars with <progress>",
         content: `
-            <p>The <code><progress></code> tag shows task completion, like downloads, with <code>value</code> and <code>max</code> attributes. It’s an inline-block, semantic element, accessible for screen readers. Stylable with CSS, it visualizes dynamic updates. Progress bars enhance user feedback.</p>
+            <p>The <code>&lt;progress&gt;</code> tag shows task completion, like downloads, with <code>value</code> and <code>max</code> attributes. It’s an inline-block, semantic element, accessible for screen readers. Stylable with CSS, it visualizes dynamic updates. Progress bars enhance user feedback.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<progress value="50" max="100"></progress>
-            </pre>
+            <pre><code>&lt;progress value="50" max="100"&gt;&lt;/progress&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <progress value="50" max="100"></progress>
@@ -1444,11 +1436,9 @@ const lessons = [
     {
         title: "Lesson 83: Meters with <meter>",
         content: `
-            <p>The <code><meter></code> tag displays a scalar value within a range, like battery levels, using <code>value</code>, <code>min</code>, and <code>max</code>. It’s an inline-block, semantic element, with accessibility support. It’s stylable for visual clarity. Meters convey precise measurements.</p>
+            <p>The <code>&lt;meter&gt;</code> tag displays a scalar value within a range, like battery levels, using <code>value</code>, <code>min</code>, and <code>max</code>. It’s an inline-block, semantic element, with accessibility support. It’s stylable for visual clarity. Meters convey precise measurements.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<meter value="75" min="0" max="100"></meter>
-            </pre>
+            <pre><code>&lt;meter value="75" min="0" max="100"&gt;&lt;/meter&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <meter value="75" min="0" max="100"></meter>
@@ -1458,14 +1448,12 @@ const lessons = [
     {
         title: "Lesson 84: Details with <details>",
         content: `
-            <p>The <code><details></code> tag creates a collapsible section, hiding content until clicked, with a <code><summary></code> for the toggle. It’s a block-level, semantic element, accessible by default. Ideal for FAQs, it saves space. Details improve content organization.</p>
+            <p>The <code>&lt;details&gt;</code> tag creates a collapsible section, hiding content until clicked, with a <code>&lt;summary&gt;</code> for the toggle. It’s a block-level, semantic element, accessible by default. Ideal for FAQs, it saves space. Details improve content organization.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<details>
-    <summary>Click me</summary>
-    <p>Hidden content.</p>
-</details>
-            </pre>
+            <pre><code>&lt;details&gt;
+    &lt;summary&gt;Click me&lt;/summary&gt;
+    &lt;p&gt;Hidden content.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <details>
@@ -1478,14 +1466,12 @@ const lessons = [
     {
         title: "Lesson 85: Summaries with <summary>",
         content: `
-            <p>The <code><summary></code> tag defines the visible heading for a <code><details></code> element, toggling its content. It’s a block-level element, accessible for keyboard and screen readers. It’s stylable for clarity. Summaries make collapsible sections intuitive.</p>
+            <p>The <code>&lt;summary&gt;</code> tag defines the visible heading for a <code>&lt;details&gt;</code> element, toggling its content. It’s a block-level element, accessible for keyboard and screen readers. It’s stylable for clarity. Summaries make collapsible sections intuitive.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<details>
-    <summary>More Info</summary>
-    <p>Details here.</p>
-</details>
-            </pre>
+            <pre><code>&lt;details&gt;
+    &lt;summary&gt;More Info&lt;/summary&gt;
+    &lt;p&gt;Details here.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <details>
@@ -1498,13 +1484,11 @@ const lessons = [
     {
         title: "Lesson 86: Dialogs with <dialog>",
         content: `
-            <p>The <code><dialog></code> tag creates modal or non-modal popups, controlled by JavaScript’s <code>show()</code> or <code>showModal()</code>. It’s a block-level element, accessible with <code>aria-label</code>. Fallback content displays if unsupported. Dialogs enhance interactive UI elements.</p>
+            <p>The <code>&lt;dialog&gt;</code> tag creates modal or non-modal popups, controlled by JavaScript’s <code>show()</code> or <code>showModal()</code>. It’s a block-level element, accessible with <code>aria-label</code>. Fallback content displays if unsupported. Dialogs enhance interactive UI elements.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<dialog id="myDialog">
-    <p>Popup content.</p>
-</dialog>
-            </pre>
+            <pre><code>&lt;dialog id="myDialog"&gt;
+    &lt;p&gt;Popup content.&lt;/p&gt;
+&lt;/dialog&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Dialog requires JavaScript - placeholder]</p>
@@ -1514,15 +1498,13 @@ const lessons = [
     {
         title: "Lesson 87: Data Lists with <datalist>",
         content: `
-            <p>The <code><datalist></code> tag provides autocomplete suggestions for <code><input></code> fields, linked via the <code>list</code> attribute. It’s a block-level element, containing <code><option></code> tags. It’s accessible, enhancing form usability. Datalists streamline user input.</p>
+            <p>The <code>&lt;datalist&gt;</code> tag provides autocomplete suggestions for <code>&lt;input&gt;</code> fields, linked via the <code>list</code> attribute. It’s a block-level element, containing <code>&lt;option&gt;</code> tags. It’s accessible, enhancing form usability. Datalists streamline user input.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input list="suggestions">
-<datalist id="suggestions">
-    <option value="Option 1">
-    <option value="Option 2">
-</datalist>
-            </pre>
+            <pre><code>&lt;input list="suggestions"&gt;
+&lt;datalist id="suggestions"&gt;
+    &lt;option value="Option 1"&gt;
+    &lt;option value="Option 2"&gt;
+&lt;/datalist&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input list="suggestions">
@@ -1536,15 +1518,13 @@ const lessons = [
     {
         title: "Lesson 88: Output Elements with <output>",
         content: `
-            <p>The <code><output></code> tag displays results of calculations or user actions, often in forms. It’s an inline-block, semantic element, linked via <code>for</code> to inputs. It’s accessible, aiding dynamic interfaces. Outputs clarify interactive feedback.</p>
+            <p>The <code>&lt;output&gt;</code> tag displays results of calculations or user actions, often in forms. It’s an inline-block, semantic element, linked via <code>for</code> to inputs. It’s accessible, aiding dynamic interfaces. Outputs clarify interactive feedback.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-    <input type="number" id="a"> +
-    <input type="number" id="b"> =
-    <output name="result" for="a b"></output>
-</form>
-            </pre>
+            <pre><code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="number" id="a"&gt; +
+    &lt;input type="number" id="b"&gt; =
+    &lt;output name="result" for="a b"&gt;&lt;/output&gt;
+&lt;/form&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
@@ -1558,11 +1538,9 @@ const lessons = [
     {
         title: "Lesson 89: Superscripts with <sup>",
         content: `
-            <p>The <code><sup></code> tag raises text as a superscript, like exponents or footnotes. It’s an inline element, semantic for math or references. It’s accessible, maintaining readability. Superscripts add precision to technical or academic content.</p>
+            <p>The <code>&lt;sup&gt;</code> tag raises text as a superscript, like exponents or footnotes. It’s an inline element, semantic for math or references. It’s accessible, maintaining readability. Superscripts add precision to technical or academic content.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>E=mc<sup>2</sup></p>
-            </pre>
+            <pre><code>&lt;p&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>E=mc<sup>2</sup></p>
@@ -1572,11 +1550,9 @@ const lessons = [
     {
         title: "Lesson 90: Subscripts with <sub>",
         content: `
-            <p>The <code><sub></code> tag lowers text as a subscript, used for chemical formulas or indices. It’s an inline, semantic element, ensuring clarity in technical contexts. It’s accessible for screen readers. Subscripts enhance scientific or mathematical displays.</p>
+            <p>The <code>&lt;sub&gt;</code> tag lowers text as a subscript, used for chemical formulas or indices. It’s an inline, semantic element, ensuring clarity in technical contexts. It’s accessible for screen readers. Subscripts enhance scientific or mathematical displays.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>H<sub>2</sub>O</p>
-            </pre>
+            <pre><code>&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>H<sub>2</sub>O</p>
@@ -1586,11 +1562,9 @@ const lessons = [
     {
         title: "Lesson 91: Marked Text with <mark>",
         content: `
-            <p>The <code><mark></code> tag highlights text for emphasis, typically with a yellow background. It’s an inline, semantic element, useful for search results or notes. It’s accessible, distinguishable by screen readers. Marks draw attention to key information.</p>
+            <p>The <code>&lt;mark&gt;</code> tag highlights text for emphasis, typically with a yellow background. It’s an inline, semantic element, useful for search results or notes. It’s accessible, distinguishable by screen readers. Marks draw attention to key information.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Key <mark>term</mark> here.</p>
-            </pre>
+            <pre><code>&lt;p&gt;Key &lt;mark&gt;term&lt;/mark&gt; here.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Key <mark>term</mark> here.</p>
@@ -1600,11 +1574,9 @@ const lessons = [
     {
         title: "Lesson 92: Deleted Text with <del>",
         content: `
-            <p>The <code><del></code> tag marks text as removed, often with a strikethrough. It’s a semantic element, inline or block, used for edits or updates. The <code>cite</code> attribute explains changes. Deleted text clarifies revisions for accessibility.</p>
+            <p>The <code>&lt;del&gt;</code> tag marks text as removed, often with a strikethrough. It’s a semantic element, inline or block, used for edits or updates. The <code>cite</code> attribute explains changes. Deleted text clarifies revisions for accessibility.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Old <del>price</del> new price.</p>
-            </pre>
+            <pre><code>&lt;p&gt;Old &lt;del&gt;price&lt;/del&gt; new price.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Old <del>price</del> new price.</p>
@@ -1614,11 +1586,9 @@ const lessons = [
     {
         title: "Lesson 93: Inserted Text with <ins>",
         content: `
-            <p>The <code><ins></code> tag indicates added text, often underlined. It’s a semantic element, inline or block, used with <code><del></code> for edits. The <code>cite</code> attribute links to reasons. Inserted text highlights updates accessibly.</p>
+            <p>The <code>&lt;ins&gt;</code> tag indicates added text, often underlined. It’s a semantic element, inline or block, used with <code>&lt;del&gt;</code> for edits. The <code>cite</code> attribute links to reasons. Inserted text highlights updates accessibly.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>New <ins>feature</ins> added.</p>
-            </pre>
+            <pre><code>&lt;p&gt;New &lt;ins&gt;feature&lt;/ins&gt; added.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>New <ins>feature</ins> added.</p>
@@ -1628,13 +1598,11 @@ const lessons = [
     {
         title: "Lesson 94: Addresses with <address>",
         content: `
-            <p>The <code><address></code> tag provides contact information, like emails or locations. It’s a block-level, semantic element, often italicized by browsers. It aids accessibility and SEO by marking contact data. Addresses clarify author or organization details.</p>
+            <p>The <code>&lt;address&gt;</code> tag provides contact information, like emails or locations. It’s a block-level, semantic element, often italicized by browsers. It aids accessibility and SEO by marking contact data. Addresses clarify author or organization details.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<address>
+            <pre><code>&lt;address&gt;
     Email: info@example.com
-</address>
-            </pre>
+&lt;/address&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <address>
@@ -1646,11 +1614,9 @@ const lessons = [
     {
         title: "Lesson 95: Citations with <cite>",
         content: `
-            <p>The <code><cite></code> tag references a creative work, like a book or movie, often italicized. It’s an inline, semantic element, aiding accessibility and SEO. It’s distinct from <code>cite</code> attributes. Citations credit sources clearly.</p>
+            <p>The <code>&lt;cite&gt;</code> tag references a creative work, like a book or movie, often italicized. It’s an inline, semantic element, aiding accessibility and SEO. It’s distinct from <code>cite</code> attributes. Citations credit sources clearly.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>From <cite>Book Title</cite>.</p>
-            </pre>
+            <pre><code>&lt;p&gt;From &lt;cite&gt;Book Title&lt;/cite&gt;.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>From <cite>Book Title</cite>.</p>
@@ -1660,11 +1626,9 @@ const lessons = [
     {
         title: "Lesson 96: Bidirectional Text with <bdi>",
         content: `
-            <p>The <code><bdi></code> tag isolates text with unknown directionality, like usernames in mixed scripts. It’s an inline element, ensuring correct rendering in RTL or LTR contexts. It’s accessible, aiding global sites. BDI handles complex text displays.</p>
+            <p>The <code>&lt;bdi&gt;</code> tag isolates text with unknown directionality, like usernames in mixed scripts. It’s an inline element, ensuring correct rendering in RTL or LTR contexts. It’s accessible, aiding global sites. BDI handles complex text displays.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>User: <bdi>اسم</bdi></p>
-            </pre>
+            <pre><code>&lt;p&gt;User: &lt;bdi&gt;اسم&lt;/bdi&gt;&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>User: <bdi>اسم</bdi></p>
@@ -1674,11 +1638,9 @@ const lessons = [
     {
         title: "Lesson 97: Bidirectional Override with <bdo>",
         content: `
-            <p>The <code><bdo></code> tag forces text direction with the <code>dir</code> attribute (<code>ltr</code> or <code>rtl</code>). It’s an inline element, overriding natural script direction. It’s useful for special formatting, with accessibility support. BDO controls text orientation precisely.</p>
+            <p>The <code>&lt;bdo&gt;</code> tag forces text direction with the <code>dir</code> attribute (<code>ltr</code> or <code>rtl</code>). It’s an inline element, overriding natural script direction. It’s useful for special formatting, with accessibility support. BDO controls text orientation precisely.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p><bdo dir="rtl">Reverse me</bdo></p>
-            </pre>
+            <pre><code>&lt;p&gt;&lt;bdo dir="rtl"&gt;Reverse me&lt;/bdo&gt;&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p><bdo dir="rtl">Reverse me</bdo></p>
@@ -1688,11 +1650,9 @@ const lessons = [
     {
         title: "Lesson 98: Time Elements with <time>",
         content: `
-            <p>The <code><time></code> tag marks dates or times, with a <code>datetime</code> attribute for machine-readable formats. It’s an inline, semantic element, aiding accessibility and SEO. It’s versatile for schedules or events. Time tags enhance temporal clarity.</p>
+            <p>The <code>&lt;time&gt;</code> tag marks dates or times, with a <code>datetime</code> attribute for machine-readable formats. It’s an inline, semantic element, aiding accessibility and SEO. It’s versatile for schedules or events. Time tags enhance temporal clarity.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<time datetime="2025-04-14">April 14, 2025</time>
-            </pre>
+            <pre><code>&lt;time datetime="2025-04-14"&gt;April 14, 2025&lt;/time&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <time datetime="2025-04-14">April 14, 2025</time>
@@ -1702,14 +1662,12 @@ const lessons = [
     {
         title: "Lesson 99: Ruby Annotations with <ruby>",
         content: `
-            <p>The <code><ruby></code> tag provides pronunciation or translation for East Asian scripts, using <code><rt></code> for annotations. It’s an inline element, accessible for screen readers. It’s niche but vital for languages like Japanese. Ruby enhances text comprehension.</p>
+            <p>The <code>&lt;ruby&gt;</code> tag provides pronunciation or translation for East Asian scripts, using <code>&lt;rt&gt;</code> for annotations. It’s an inline element, accessible for screen readers. It’s niche but vital for languages like Japanese. Ruby enhances text comprehension.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<ruby>
-    漢 <rt>kan</rt>
-    字 <rt>ji</rt>
-</ruby>
-            </pre>
+            <pre><code>&lt;ruby&gt;
+    漢 &lt;rt&gt;kan&lt;/rt&gt;
+    字 &lt;rt&gt;ji&lt;/rt&gt;
+&lt;/ruby&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <ruby>
@@ -1722,13 +1680,11 @@ const lessons = [
     {
         title: "Lesson 100: Ruby Text with <rt>",
         content: `
-            <p>The <code><rt></code> tag defines annotations in a <code><ruby></code> element, like pronunciations. It’s an inline element, placed above or beside base text. It’s accessible, supporting multilingual clarity. Ruby text completes annotations for specialized scripts.</p>
+            <p>The <code>&lt;rt&gt;</code> tag defines annotations in a <code>&lt;ruby&gt;</code> element, like pronunciations. It’s an inline element, placed above or beside base text. It’s accessible, supporting multilingual clarity. Ruby text completes annotations for specialized scripts.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<ruby>
-    学 <rt>gaku</rt>
-</ruby>
-            </pre>
+            <pre><code>&lt;ruby&gt;
+    学 &lt;rt&gt;gaku&lt;/rt&gt;
+&lt;/ruby&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <ruby>
@@ -2128,6 +2084,7 @@ for (let i = 0; i < lessons.length; i++) {
     const link = document.createElement('a');
     link.href = '#';
     link.textContent = i + 1;
+    link.setAttribute('aria-label', `Go to lesson ${i + 1}`);
     link.addEventListener('click', (e) => {
         e.preventDefault();
         currentLesson = i;
@@ -2141,7 +2098,15 @@ for (let i = 0; i < lessons.length; i++) {
 function displayLesson() {
     const lesson = lessons[currentLesson];
     document.getElementById('lesson-title').textContent = lesson.title;
-    document.getElementById('lesson-content').innerHTML = lesson.content;
+    
+    // Parse the lesson content as HTML to preserve structure
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(lesson.content, 'text/html');
+    const lessonBody = document.getElementById('lesson-content');
+    lessonBody.innerHTML = ''; // Clear previous content
+    lessonBody.appendChild(doc.body);
+
+    // Update navigation buttons
     document.getElementById('prev-lesson').disabled = currentLesson === 0;
     document.getElementById('next-lesson').disabled = currentLesson === lessons.length - 1;
     document.querySelectorAll('.lesson-links a').forEach((link, index) => {
@@ -2157,6 +2122,7 @@ document.getElementById('prev-lesson').addEventListener('click', () => {
         displayLesson();
     }
 });
+
 document.getElementById('next-lesson').addEventListener('click', () => {
     if (currentLesson < lessons.length - 1) {
         currentLesson++;
@@ -2185,7 +2151,7 @@ function displayTestPage() {
             ${q.options.map((opt, j) => `
                 <label>
                     <input type="radio" name="q${i}" value="${j}" ${userAnswers[i] == j ? 'checked' : ''}>
-                    ${opt}
+                    ${opt.includes('<') ? `<code>${opt}</code>` : opt}
                 </label>
             `).join('<br>')}
             <button type="submit">Submit</button>
@@ -2198,7 +2164,8 @@ function displayTestPage() {
                 userAnswers[i] = parseInt(selected.value);
                 localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
                 const feedback = form.querySelector('.feedback');
-                feedback.textContent = userAnswers[i] === q.answer ? 'Correct!' : `Incorrect. The answer is: ${q.options[q.answer]}.`;
+                const correctOption = q.options[q.answer].includes('<') ? `<code>${q.options[q.answer]}</code>` : q.options[q.answer];
+                feedback.innerHTML = userAnswers[i] === q.answer ? 'Correct!' : `Incorrect. The answer is: ${correctOption}.`;
             }
         });
         testContent.appendChild(form);
@@ -2219,7 +2186,9 @@ function showTestSummary() {
         if (userAnswers[i] === q.answer) {
             score++;
         } else {
-            incorrect.push(`Question ${i + 1}: ${q.question} (Your answer: ${userAnswers[i] !== undefined ? q.options[userAnswers[i]] : 'None'}, Correct: ${q.options[q.answer]})`);
+            const userAnswer = userAnswers[i] !== undefined ? q.options[userAnswers[i]] : 'None';
+            const correctAnswer = q.options[q.answer];
+            incorrect.push(`Question ${i + 1}: ${q.question} (Your answer: ${userAnswer.includes('<') ? `<code>${userAnswer}</code>` : userAnswer}, Correct: ${correctAnswer.includes('<') ? `<code>${correctAnswer}</code>` : correctAnswer})`);
         }
     });
     const summary = document.getElementById('test-summary');
@@ -2242,6 +2211,7 @@ document.getElementById('prev-test').addEventListener('click', () => {
         displayTestPage();
     }
 });
+
 document.getElementById('next-test').addEventListener('click', () => {
     if (currentTestPage < Math.ceil(testQuestions.length / 10)) {
         currentTestPage++;
@@ -2261,7 +2231,7 @@ function displayLibrary(searchTerm = '') {
     filtered.forEach(item => {
         const details = document.createElement('details');
         details.innerHTML = `
-            <summary>${item.tag}</summary>
+            <summary><code>${item.tag}</code></summary>
             <p>${item.description}</p>
         `;
         libraryContent.appendChild(details);
