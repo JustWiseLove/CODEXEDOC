@@ -1790,4 +1790,467 @@ const testQuestions = [
         options: ["&lt;input&gt;", "&lt;select&gt;", "&lt;option&gt;", "&lt;datalist&gt;"],
         answer: 1
     },
+    {
+        question: "Which tag defines dropdown items?",
+        options: ["&lt;select&gt;", "&lt;option&gt;", "&lt;datalist&gt;", "&lt;li&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag organizes data in a grid?",
+        options: ["&lt;div&gt;", "&lt;table&gt;", "&lt;grid&gt;", "&lt;section&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines a table row?",
+        options: ["&lt;td&gt;", "&lt;th&gt;", "&lt;tr&gt;", "&lt;table&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag is a table data cell?",
+        options: ["&lt;tr&gt;", "&lt;td&gt;", "&lt;th&gt;", "&lt;caption&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines a table header?",
+        options: ["&lt;td&gt;", "&lt;tr&gt;", "&lt;th&gt;", "&lt;thead&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag adds a table title?",
+        options: ["&lt;title&gt;", "&lt;caption&gt;", "&lt;label&gt;", "&lt;legend&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag groups table body rows?",
+        options: ["&lt;thead&gt;", "&lt;tbody&gt;", "&lt;tfoot&gt;", "&lt;table&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag groups table header rows?",
+        options: ["&lt;tbody&gt;", "&lt;thead&gt;", "&lt;tfoot&gt;", "&lt;tr&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag embeds audio?",
+        options: ["&lt;video&gt;", "&lt;audio&gt;", "&lt;media&gt;", "&lt;source&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag embeds video?",
+        options: ["&lt;audio&gt;", "&lt;video&gt;", "&lt;iframe&gt;", "&lt;object&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag embeds external content?",
+        options: ["&lt;video&gt;", "&lt;audio&gt;", "&lt;iframe&gt;", "&lt;canvas&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag provides metadata?",
+        options: ["&lt;head&gt;", "&lt;meta&gt;", "&lt;title&gt;", "&lt;link&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag sets the page title?",
+        options: ["&lt;meta&gt;", "&lt;title&gt;", "&lt;head&gt;", "&lt;header&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag links to CSS?",
+        options: ["&lt;style&gt;", "&lt;script&gt;", "&lt;link&gt;", "&lt;href&gt;"],
+        answer: 2
+    },
+    {
+        question: "Which is an HTML comment?",
+        options: ["// Comment", "&lt;!-- Comment --&gt;", "# Comment", "/* Comment */"],
+        answer: 1
+    },
+    {
+        question: "What attribute is unique per element?",
+        options: ["class", "id", "name", "type"],
+        answer: 1
+    },
+    {
+        question: "Which attribute groups elements?",
+        options: ["id", "class", "name", "for"],
+        answer: 1
+    },
+    {
+        question: "What attribute links an &lt;a&gt; tag?",
+        options: ["src", "href", "alt", "link"],
+        answer: 1
+    },
+    {
+        question: "Which attribute aids image accessibility?",
+        options: ["src", "href", "alt", "title"],
+        answer: 2
+    },
+    {
+        question: "What attribute sets media paths?",
+        options: ["href", "src", "alt", "data"],
+        answer: 1
+    },
+    {
+        question: "Which tag creates a collapsible section?",
+        options: ["&lt;dialog&gt;", "&lt;details&gt;", "&lt;summary&gt;", "&lt;aside&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag shows a scalar value?",
+        options: ["&lt;progress&gt;", "&lt;meter&gt;", "&lt;output&gt;", "&lt;data&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag highlights text?",
+        options: ["&lt;strong&gt;", "&lt;em&gt;", "&lt;mark&gt;", "&lt;b&gt;"],
+        answer: 2
+    },
+    {
+        question: "What tag marks deleted text?",
+        options: ["&lt;ins&gt;", "&lt;del&gt;", "&lt;s&gt;", "&lt;mark&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag marks inserted text?",
+        options: ["&lt;del&gt;", "&lt;ins&gt;", "&lt;mark&gt;", "&lt;strong&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag provides contact information?",
+        options: ["&lt;footer&gt;", "&lt;address&gt;", "&lt;contact&gt;", "&lt;email&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag references a creative work?",
+        options: ["&lt;quote&gt;", "&lt;cite&gt;", "&lt;q&gt;", "&lt;ref&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag isolates bidirectional text?",
+        options: ["&lt;bdo&gt;", "&lt;bdi&gt;", "&lt;rtl&gt;", "&lt;ltr&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag overrides text direction?",
+        options: ["&lt;bdi&gt;", "&lt;bdo&gt;", "&lt;dir&gt;", "&lt;text&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag marks a specific date or time?",
+        options: ["&lt;date&gt;", "&lt;time&gt;", "&lt;calendar&gt;", "&lt;schedule&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag provides ruby annotations?",
+        options: ["&lt;rt&gt;", "&lt;ruby&gt;", "&lt;rp&gt;", "&lt;rb&gt;"],
+        answer: 1
+    },
+    {
+        question: "What tag defines ruby text?",
+        options: ["&lt;ruby&gt;", "&lt;rt&gt;", "&lt;rp&gt;", "&lt;rb&gt;"],
+        answer: 1
+    },
+    {
+        question: "Which tag embeds vector graphics?",
+        options: ["&lt;canvas&gt;", "&lt;svg&gt;", "&lt;img&gt;", "&lt;vector&gt;"],
+        answer: 1
+    }
+];
+
+// Library Data (100 HTML tags)
+const library = [
+    { tag: "&lt;a&gt;", description: "Creates a hyperlink, using href for the URL." },
+    { tag: "&lt;abbr&gt;", description: "Marks an abbreviation, with title for expansion." },
+    { tag: "&lt;address&gt;", description: "Provides contact information, often italicized." },
+    { tag: "&lt;area&gt;", description: "Defines clickable areas in an image map." },
+    { tag: "&lt;article&gt;", description: "Represents standalone content, like a blog post." },
+    { tag: "&lt;aside&gt;", description: "Holds supplementary content, like sidebars." },
+    { tag: "&lt;audio&gt;", description: "Embeds sound, with controls for playback." },
+    { tag: "&lt;b&gt;", description: "Applies bold styling, non-semantic." },
+    { tag: "&lt;base&gt;", description: "Sets the base URL for relative links." },
+    { tag: "&lt;bdi&gt;", description: "Isolates text for bidirectional formatting." },
+    { tag: "&lt;bdo&gt;", description: "Overrides text direction (ltr or rtl)." },
+    { tag: "&lt;blockquote&gt;", description: "Indicates a lengthy quotation, often indented." },
+    { tag: "&lt;body&gt;", description: "Contains all visible page content." },
+    { tag: "&lt;br&gt;", description: "Inserts a line break within text." },
+    { tag: "&lt;button&gt;", description: "Creates a clickable button, often in forms." },
+    { tag: "&lt;canvas&gt;", description: "Provides a drawing area for JavaScript graphics." },
+    { tag: "&lt;caption&gt;", description: "Adds a title to a table." },
+    { tag: "&lt;cite&gt;", description: "References a creative work, like a book." },
+    { tag: "&lt;code&gt;", description: "Marks inline code snippets, monospace font." },
+    { tag: "&lt;col&gt;", description: "Defines column properties in a table." },
+    { tag: "&lt;colgroup&gt;", description: "Groups columns for styling in a table." },
+    { tag: "&lt;data&gt;", description: "Links content with a machine-readable value." },
+    { tag: "&lt;datalist&gt;", description: "Provides autocomplete options for inputs." },
+    { tag: "&lt;dd&gt;", description: "Describes a term in a description list." },
+    { tag: "&lt;del&gt;", description: "Marks text as deleted, often strikethrough." },
+    { tag: "&lt;details&gt;", description: "Creates a collapsible section with a toggle." },
+    { tag: "&lt;dfn&gt;", description: "Marks a term being defined." },
+    { tag: "&lt;dialog&gt;", description: "Defines a popup or modal dialog." },
+    { tag: "&lt;div&gt;", description: "A generic block container for content." },
+    { tag: "&lt;dl&gt;", description: "Creates a description list of terms and details." },
+    { tag: "&lt;dt&gt;", description: "Defines a term in a description list." },
+    { tag: "&lt;em&gt;", description: "Emphasizes text, typically italicized." },
+    { tag: "&lt;embed&gt;", description: "Inserts external content, like applets." },
+    { tag: "&lt;fieldset&gt;", description: "Groups form controls with a border." },
+    { tag: "&lt;figcaption&gt;", description: "Captions a figure element." },
+    { tag: "&lt;figure&gt;", description: "Groups media with an optional caption." },
+    { tag: "&lt;footer&gt;", description: "Holds footer content, like copyrights." },
+    { tag: "&lt;form&gt;", description: "Creates a user input form." },
+    { tag: "&lt;h1&gt;", description: "Defines the top-level heading." },
+    { tag: "&lt;h2&gt;", description: "Defines a second-level heading." },
+    { tag: "&lt;h3&gt;", description: "Defines a third-level heading." },
+    { tag: "&lt;h4&gt;", description: "Defines a fourth-level heading." },
+    { tag: "&lt;h5&gt;", description: "Defines a fifth-level heading." },
+    { tag: "&lt;h6&gt;", description: "Defines a sixth-level heading." },
+    { tag: "&lt;head&gt;", description: "Contains metadata about the document." },
+    { tag: "&lt;header&gt;", description: "Marks introductory content, like navbars." },
+    { tag: "&lt;hr&gt;", description: "Creates a thematic break, like a line." },
+    { tag: "&lt;html&gt;", description: "The root element of an HTML document." },
+    { tag: "&lt;i&gt;", description: "Applies italic styling, non-semantic." },
+    { tag: "&lt;iframe&gt;", description: "Embeds external content in a frame." },
+    { tag: "&lt;img&gt;", description: "Embeds an image, with alt for accessibility." },
+    { tag: "&lt;input&gt;", description: "Creates form input fields, like text or radio." },
+    { tag: "&lt;ins&gt;", description: "Marks text as inserted, often underlined." },
+    { tag: "&lt;kbd&gt;", description: "Indicates keyboard input, like shortcuts." },
+    { tag: "&lt;label&gt;", description: "Describes a form input for accessibility." },
+    { tag: "&lt;legend&gt;", description: "Captions a fieldset in a form." },
+    { tag: "&lt;li&gt;", description: "Defines a list item in ul or ol." },
+    { tag: "&lt;link&gt;", description: "Connects external resources, like CSS." },
+    { tag: "&lt;main&gt;", description: "Holds the primary content of a page." },
+    { tag: "&lt;map&gt;", description: "Defines an image map with clickable areas." },
+    { tag: "&lt;mark&gt;", description: "Highlights text for emphasis." },
+    { tag: "&lt;meta&gt;", description: "Provides metadata, like charset." },
+    { tag: "&lt;meter&gt;", description: "Displays a scalar value in a range." },
+    { tag: "&lt;nav&gt;", description: "Marks navigation links, like menus." },
+    { tag: "&lt;noscript&gt;", description: "Shows content if JavaScript is disabled." },
+    { tag: "&lt;object&gt;", description: "Embeds multimedia, like PDFs." },
+    { tag: "&lt;ol&gt;", description: "Creates an ordered, numbered list." },
+    { tag: "&lt;optgroup&gt;", description: "Groups options in a select menu." },
+    { tag: "&lt;option&gt;", description: "Defines an item in a select or datalist." },
+    { tag: "&lt;output&gt;", description: "Shows form calculation results." },
+    { tag: "&lt;p&gt;", description: "Defines a paragraph of text." },
+    { tag: "&lt;param&gt;", description: "Sets parameters for an object element." },
+    { tag: "&lt;picture&gt;", description: "Provides multiple image sources." },
+    { tag: "&lt;pre&gt;", description: "Displays preformatted text with spacing." },
+    { tag: "&lt;progress&gt;", description: "Shows task completion, like downloads." },
+    { tag: "&lt;q&gt;", description: "Marks short, inline quotations." },
+    { tag: "&lt;rp&gt;", description: "Provides fallback for ruby annotations." },
+    { tag: "&lt;rt&gt;", description: "Defines ruby text for annotations." },
+    { tag: "&lt;ruby&gt;", description: "Marks text with pronunciation annotations." },
+    { tag: "&lt;s&gt;", description: "Marks text as no longer relevant." },
+    { tag: "&lt;samp&gt;", description: "Shows sample program output." },
+    { tag: "&lt;script&gt;", description: "Embeds or links JavaScript code." },
+    { tag: "&lt;section&gt;", description: "Groups related content, like chapters." },
+    { tag: "&lt;select&gt;", description: "Creates a dropdown menu." },
+    { tag: "&lt;small&gt;", description: "Marks fine print or side comments." },
+    { tag: "&lt;source&gt;", description: "Specifies media sources for audio/video." },
+    { tag: "&lt;span&gt;", description: "A generic inline container." },
+    { tag: "&lt;strong&gt;", description: "Marks important text, typically bold." },
+    { tag: "&lt;style&gt;", description: "Embeds CSS styles in the document." },
+    { tag: "&lt;sub&gt;", description: "Lowers text as a subscript." },
+    { tag: "&lt;summary&gt;", description: "Toggles a details element’s content." },
+    { tag: "&lt;sup&gt;", description: "Raises text as a superscript." },
+    { tag: "&lt;svg&gt;", description: "Embeds scalable vector graphics." },
+    { tag: "&lt;table&gt;", description: "Organizes data in rows and columns." },
+    { tag: "&lt;tbody&gt;", description: "Groups table body rows." },
+    { tag: "&lt;td&gt;", description: "Defines a table data cell." },
+    { tag: "&lt;template&gt;", description: "Holds reusable content for JavaScript." },
+    { tag: "&lt;textarea&gt;", description: "Creates a multi-line text input." },
+    { tag: "&lt;tfoot&gt;", description: "Groups table footer rows." },
+    { tag: "&lt;th&gt;", description: "Defines a table header cell." },
+    { tag: "&lt;thead&gt;", description: "Groups table header rows." },
+    { tag: "&lt;time&gt;", description: "Marks a date or time." },
+    { tag: "&lt;title&gt;", description: "Sets the page title in the browser." },
+    { tag: "&lt;tr&gt;", description: "Defines a table row." },
+    { tag: "&lt;track&gt;", description: "Adds captions to audio/video." },
+    { tag: "&lt;u&gt;", description: "Applies underline styling, non-semantic." },
+    { tag: "&lt;ul&gt;", description: "Creates an unordered, bulleted list." },
+    { tag: "&lt;var&gt;", description: "Denotes a variable in code or math." },
+    { tag: "&lt;video&gt;", description: "Embeds video with playback controls." },
+    { tag: "&lt;wbr&gt;", description: "Suggests a word break opportunity." }
+];
+
+// Initialize State
+let currentLesson = parseInt(localStorage.getItem('currentLesson')) || 0;
+let currentTestPage = parseInt(localStorage.getItem('currentTestPage')) || 0;
+let userAnswers = JSON.parse(localStorage.getItem('userAnswers')) || {};
+
+// Tab Switching
+document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(button.dataset.tab).classList.add('active');
+    });
+});
+
+// Lessons: Generate Grid Links
+const lessonLinks = document.querySelector('.lesson-links');
+for (let i = 0; i < lessons.length; i++) {
+    const link = document.createElement('a');
+    link.href = '#';
+    link.textContent = i + 1;
+    link.setAttribute('aria-label', `Go to lesson ${i + 1}`);
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentLesson = i;
+        localStorage.setItem('currentLesson', currentLesson);
+        displayLesson();
+    });
+    lessonLinks.appendChild(link);
+}
+
+// Lessons: Display Current Lesson
+function displayLesson() {
+    const lesson = lessons[currentLesson];
+    document.getElementById('lesson-title').textContent = lesson.title;
     
+    // Parse the lesson content as HTML to preserve structure
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(lesson.content, 'text/html');
+    const lessonBody = document.getElementById('lesson-content');
+    lessonBody.innerHTML = ''; // Clear previous content
+    lessonBody.appendChild(doc.body);
+
+    // Update navigation buttons
+    document.getElementById('prev-lesson').disabled = currentLesson === 0;
+    document.getElementById('next-lesson').disabled = currentLesson === lessons.length - 1;
+    document.querySelectorAll('.lesson-links a').forEach((link, index) => {
+        link.classList.toggle('active', index === currentLesson);
+    });
+}
+
+// Lessons: Navigation
+document.getElementById('prev-lesson').addEventListener('click', () => {
+    if (currentLesson > 0) {
+        currentLesson--;
+        localStorage.setItem('currentLesson', currentLesson);
+        displayLesson();
+    }
+});
+
+document.getElementById('next-lesson').addEventListener('click', () => {
+    if (currentLesson < lessons.length - 1) {
+        currentLesson++;
+        localStorage.setItem('currentLesson', currentLesson);
+        displayLesson();
+    }
+});
+
+// Test: Display Questions (10 per page)
+function displayTestPage() {
+    const start = currentTestPage * 10;
+    const end = Math.min(start + 10, testQuestions.length);
+    const testContent = document.getElementById('test-content');
+    testContent.innerHTML = '';
+    
+    if (currentTestPage === Math.ceil(testQuestions.length / 10)) {
+        showTestSummary();
+        return;
+    }
+
+    for (let i = start; i < end; i++) {
+        const q = testQuestions[i];
+        const form = document.createElement('form');
+        form.innerHTML = `
+            <p>${i + 1}. ${q.question}</p>
+            ${q.options.map((opt, j) => `
+                <label>
+                    <input type="radio" name="q${i}" value="${j}" ${userAnswers[i] == j ? 'checked' : ''}>
+                    ${opt.includes('&lt;') ? `<code>${opt}</code>` : opt}
+                </label>
+            `).join('<br>')}
+            <button type="submit">Submit</button>
+            <div class="feedback"></div>
+        `;
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const selected = form.querySelector(`input[name="q${i}"]:checked`);
+            if (selected) {
+                userAnswers[i] = parseInt(selected.value);
+                localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+                const feedback = form.querySelector('.feedback');
+                const correctOption = q.options[q.answer].includes('&lt;') ? `<code>${q.options[q.answer]}</code>` : q.options[q.answer];
+                feedback.innerHTML = userAnswers[i] === q.answer ? 'Correct!' : `Incorrect. The answer is: ${correctOption}.`;
+            }
+        });
+        testContent.appendChild(form);
+    }
+
+    document.getElementById('test-progress').textContent = `Page ${currentTestPage + 1} of ${Math.ceil(testQuestions.length / 10) + 1}`;
+    document.getElementById('prev-test').disabled = currentTestPage === 0;
+    document.getElementById('next-test').disabled = currentTestPage === Math.ceil(testQuestions.length / 10) - 1;
+}
+
+// Test: Summary
+function showTestSummary() {
+    const testContent = document.getElementById('test-content');
+    testContent.innerHTML = '';
+    let score = 0;
+    let incorrect = [];
+    testQuestions.forEach((q, i) => {
+        if (userAnswers[i] === q.answer) {
+            score++;
+        } else {
+            const userAnswer = userAnswers[i] !== undefined ? q.options[userAnswers[i]] : 'None';
+            const correctAnswer = q.options[q.answer];
+            incorrect.push(`Question ${i + 1}: ${q.question} (Your answer: ${userAnswer.includes('&lt;') ? `<code>${userAnswer}</code>` : userAnswer}, Correct: ${correctAnswer.includes('&lt;') ? `<code>${correctAnswer}</code>` : correctAnswer})`);
+        }
+    });
+    const summary = document.getElementById('test-summary');
+    summary.innerHTML = `
+        <h3>Test Results</h3>
+        <p>Score: ${score} out of ${testQuestions.length} (${((score / testQuestions.length) * 100).toFixed(2)}%)</p>
+        ${incorrect.length ? '<h4>Incorrect Answers:</h4><ul>' + incorrect.map(item => `<li>${item}</li>`).join('') + '</ul>' : '<p>All correct!</p>'}
+    `;
+    document.getElementById('test-progress').textContent = `Summary`;
+    document.getElementById('prev-test').disabled = false;
+    document.getElementById('next-test').disabled = true;
+}
+
+// Test: Navigation
+document.getElementById('prev-test').addEventListener('click', () => {
+    if (currentTestPage > 0) {
+        currentTestPage--;
+        localStorage.setItem('currentTestPage', currentTestPage);
+        document.getElementById('test-summary').innerHTML = '';
+        displayTestPage();
+    }
+});
+
+document.getElementById('next-test').addEventListener('click', () => {
+    if (currentTestPage < Math.ceil(testQuestions.length / 10)) {
+        currentTestPage++;
+        localStorage.setItem('currentTestPage', currentTestPage);
+        displayTestPage();
+    }
+});
+
+// Library: Display and Search
+function displayLibrary(searchTerm = '') {
+    const libraryContent = document.getElementById('library-content');
+    libraryContent.innerHTML = '';
+    const filtered = library.filter(item => 
+        item.tag.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        item.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    filtered.forEach(item => {
+        const details = document.createElement('details');
+        details.innerHTML = `
+            <summary><code>${item.tag}</code></summary>
+            <p>${item.description}</p>
+        `;
+        libraryContent.appendChild(details);
+    });
+}
+
+document.getElementById('library-search').addEventListener('input', (e) => {
+    displayLibrary(e.target.value);
+});
+
+// Initialize
+displayLesson();
+displayTestPage();
+displayLibrary();
