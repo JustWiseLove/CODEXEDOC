@@ -105,11 +105,26 @@ h1 {
     background: #fafafa;
 }
 
+/* Code Styling */
 pre {
     background: #f8f8f8;
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ddd;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background: #f8f8f8;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+pre code {
+    background: none;
+    padding: 0;
 }
 
 .test-content form {
