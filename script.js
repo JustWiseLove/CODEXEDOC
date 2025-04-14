@@ -1380,4 +1380,899 @@ const lessons = [
         `
     },
     {
-        title: "Lesson 79
+        title: "Lesson 79: Parameter Elements with <param>",
+        content: `
+            <p>The <code><param></code> tag defines parameters for an <code><object></code> element, like settings for plugins. It’s a self-closing, void element, using <code>name</code> and <code>value</code> attributes. Though less common today, it’s useful for legacy multimedia or specific applets. Parameters customize embedded content behavior.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<object data="movie.swf">
+    <param name="autoplay" value="true">
+</object>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>[Object with param placeholder - requires source]</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 80: Canvas Graphics with <canvas>",
+        content: `
+            <p>The <code><canvas></code> tag creates a drawing area for JavaScript graphics, like charts or animations. It’s a block-level element, requiring <code>width</code> and <code>height</code>. Fallback content displays if unsupported. Canvas enables dynamic, interactive visuals.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <canvas width="200" height="100">[Canvas not supported]</canvas>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 81: SVG Graphics with <svg>",
+        content: `
+            <p>The <code><svg></code> tag embeds scalable vector graphics, ideal for icons or diagrams. It’s a block-level element, supporting shapes like <code><circle></code> or <code><path></code>. It’s accessible with <code>title</code> tags. SVG ensures crisp visuals across devices.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="blue"/>
+</svg>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="blue"/>
+                </svg>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 82: Progress Bars with <progress>",
+        content: `
+            <p>The <code><progress></code> tag shows task completion, like downloads, with <code>value</code> and <code>max</code> attributes. It’s an inline-block, semantic element, accessible for screen readers. Stylable with CSS, it visualizes dynamic updates. Progress bars enhance user feedback.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<progress value="50" max="100"></progress>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <progress value="50" max="100"></progress>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 83: Meters with <meter>",
+        content: `
+            <p>The <code><meter></code> tag displays a scalar value within a range, like battery levels, using <code>value</code>, <code>min</code>, and <code>max</code>. It’s an inline-block, semantic element, with accessibility support. It’s stylable for visual clarity. Meters convey precise measurements.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<meter value="75" min="0" max="100"></meter>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <meter value="75" min="0" max="100"></meter>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 84: Details with <details>",
+        content: `
+            <p>The <code><details></code> tag creates a collapsible section, hiding content until clicked, with a <code><summary></code> for the toggle. It’s a block-level, semantic element, accessible by default. Ideal for FAQs, it saves space. Details improve content organization.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<details>
+    <summary>Click me</summary>
+    <p>Hidden content.</p>
+</details>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <details>
+                    <summary>Click me</summary>
+                    <p>Hidden content.</p>
+                </details>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 85: Summaries with <summary>",
+        content: `
+            <p>The <code><summary></code> tag defines the visible heading for a <code><details></code> element, toggling its content. It’s a block-level element, accessible for keyboard and screen readers. It’s stylable for clarity. Summaries make collapsible sections intuitive.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<details>
+    <summary>More Info</summary>
+    <p>Details here.</p>
+</details>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <details>
+                    <summary>More Info</summary>
+                    <p>Details here.</p>
+                </details>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 86: Dialogs with <dialog>",
+        content: `
+            <p>The <code><dialog></code> tag creates modal or non-modal popups, controlled by JavaScript’s <code>show()</code> or <code>showModal()</code>. It’s a block-level element, accessible with <code>aria-label</code>. Fallback content displays if unsupported. Dialogs enhance interactive UI elements.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<dialog id="myDialog">
+    <p>Popup content.</p>
+</dialog>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>[Dialog requires JavaScript - placeholder]</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 87: Data Lists with <datalist>",
+        content: `
+            <p>The <code><datalist></code> tag provides autocomplete suggestions for <code><input></code> fields, linked via the <code>list</code> attribute. It’s a block-level element, containing <code><option></code> tags. It’s accessible, enhancing form usability. Datalists streamline user input.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<input list="suggestions">
+<datalist id="suggestions">
+    <option value="Option 1">
+    <option value="Option 2">
+</datalist>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <input list="suggestions">
+                <datalist id="suggestions">
+                    <option value="Option 1">
+                    <option value="Option 2">
+                </datalist>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 88: Output Elements with <output>",
+        content: `
+            <p>The <code><output></code> tag displays results of calculations or user actions, often in forms. It’s an inline-block, semantic element, linked via <code>for</code> to inputs. It’s accessible, aiding dynamic interfaces. Outputs clarify interactive feedback.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="number" id="a"> +
+    <input type="number" id="b"> =
+    <output name="result" for="a b"></output>
+</form>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" id="a"> +
+                    <input type="number" id="b"> =
+                    <output name="result" for="a b"></output>
+                </form>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 89: Superscripts with <sup>",
+        content: `
+            <p>The <code><sup></code> tag raises text as a superscript, like exponents or footnotes. It’s an inline element, semantic for math or references. It’s accessible, maintaining readability. Superscripts add precision to technical or academic content.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>E=mc<sup>2</sup></p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>E=mc<sup>2</sup></p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 90: Subscripts with <sub>",
+        content: `
+            <p>The <code><sub></code> tag lowers text as a subscript, used for chemical formulas or indices. It’s an inline, semantic element, ensuring clarity in technical contexts. It’s accessible for screen readers. Subscripts enhance scientific or mathematical displays.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>H<sub>2</sub>O</p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>H<sub>2</sub>O</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 91: Marked Text with <mark>",
+        content: `
+            <p>The <code><mark></code> tag highlights text for emphasis, typically with a yellow background. It’s an inline, semantic element, useful for search results or notes. It’s accessible, distinguishable by screen readers. Marks draw attention to key information.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>Key <mark>term</mark> here.</p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>Key <mark>term</mark> here.</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 92: Deleted Text with <del>",
+        content: `
+            <p>The <code><del></code> tag marks text as removed, often with a strikethrough. It’s a semantic element, inline or block, used for edits or updates. The <code>cite</code> attribute explains changes. Deleted text clarifies revisions for accessibility.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>Old <del>price</del> new price.</p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>Old <del>price</del> new price.</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 93: Inserted Text with <ins>",
+        content: `
+            <p>The <code><ins></code> tag indicates added text, often underlined. It’s a semantic element, inline or block, used with <code><del></code> for edits. The <code>cite</code> attribute links to reasons. Inserted text highlights updates accessibly.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>New <ins>feature</ins> added.</p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>New <ins>feature</ins> added.</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 94: Addresses with <address>",
+        content: `
+            <p>The <code><address></code> tag provides contact information, like emails or locations. It’s a block-level, semantic element, often italicized by browsers. It aids accessibility and SEO by marking contact data. Addresses clarify author or organization details.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<address>
+    Email: info@example.com
+</address>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <address>
+                    Email: info@example.com
+                </address>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 95: Citations with <cite>",
+        content: `
+            <p>The <code><cite></code> tag references a creative work, like a book or movie, often italicized. It’s an inline, semantic element, aiding accessibility and SEO. It’s distinct from <code>cite</code> attributes. Citations credit sources clearly.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>From <cite>Book Title</cite>.</p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>From <cite>Book Title</cite>.</p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 96: Bidirectional Text with <bdi>",
+        content: `
+            <p>The <code><bdi></code> tag isolates text with unknown directionality, like usernames in mixed scripts. It’s an inline element, ensuring correct rendering in RTL or LTR contexts. It’s accessible, aiding global sites. BDI handles complex text displays.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p>User: <bdi>اسم</bdi></p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p>User: <bdi>اسم</bdi></p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 97: Bidirectional Override with <bdo>",
+        content: `
+            <p>The <code><bdo></code> tag forces text direction with the <code>dir</code> attribute (<code>ltr</code> or <code>rtl</code>). It’s an inline element, overriding natural script direction. It’s useful for special formatting, with accessibility support. BDO controls text orientation precisely.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<p><bdo dir="rtl">Reverse me</bdo></p>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <p><bdo dir="rtl">Reverse me</bdo></p>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 98: Time Elements with <time>",
+        content: `
+            <p>The <code><time></code> tag marks dates or times, with a <code>datetime</code> attribute for machine-readable formats. It’s an inline, semantic element, aiding accessibility and SEO. It’s versatile for schedules or events. Time tags enhance temporal clarity.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<time datetime="2025-04-14">April 14, 2025</time>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <time datetime="2025-04-14">April 14, 2025</time>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 99: Ruby Annotations with <ruby>",
+        content: `
+            <p>The <code><ruby></code> tag provides pronunciation or translation for East Asian scripts, using <code><rt></code> for annotations. It’s an inline element, accessible for screen readers. It’s niche but vital for languages like Japanese. Ruby enhances text comprehension.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<ruby>
+    漢 <rt>kan</rt>
+    字 <rt>ji</rt>
+</ruby>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <ruby>
+                    漢 <rt>kan</rt>
+                    字 <rt>ji</rt>
+                </ruby>
+            </section>
+        `
+    },
+    {
+        title: "Lesson 100: Ruby Text with <rt>",
+        content: `
+            <p>The <code><rt></code> tag defines annotations in a <code><ruby></code> element, like pronunciations. It’s an inline element, placed above or beside base text. It’s accessible, supporting multilingual clarity. Ruby text completes annotations for specialized scripts.</p>
+            <p><strong>Code Example:</strong></p>
+            <pre>
+<ruby>
+    学 <rt>gaku</rt>
+</ruby>
+            </pre>
+            <p><strong>In Action:</strong></p>
+            <section class="demo-box">
+                <ruby>
+                    学 <rt>gaku</rt>
+                </ruby>
+            </section>
+        `
+    }
+];
+
+// Library Data (100 HTML tags)
+const library = [
+    { tag: "<a>", description: "Creates a hyperlink, using href for the URL." },
+    { tag: "<abbr>", description: "Marks an abbreviation, with title for expansion." },
+    { tag: "<address>", description: "Provides contact information, often italicized." },
+    { tag: "<area>", description: "Defines clickable areas in an image map." },
+    { tag: "<article>", description: "Represents standalone content, like a blog post." },
+    { tag: "<aside>", description: "Holds supplementary content, like sidebars." },
+    { tag: "<audio>", description: "Embeds sound, with controls for playback." },
+    { tag: "<b>", description: "Applies bold styling, non-semantic." },
+    { tag: "<base>", description: "Sets the base URL for relative links." },
+    { tag: "<bdi>", description: "Isolates text for bidirectional formatting." },
+    { tag: "<bdo>", description: "Overrides text direction (ltr or rtl)." },
+    { tag: "<blockquote>", description: "Indicates a lengthy quotation, often indented." },
+    { tag: "<body>", description: "Contains all visible page content." },
+    { tag: "<br>", description: "Inserts a line break within text." },
+    { tag: "<button>", description: "Creates a clickable button, often in forms." },
+    { tag: "<canvas>", description: "Provides a drawing area for JavaScript graphics." },
+    { tag: "<caption>", description: "Adds a title to a table." },
+    { tag: "<cite>", description: "References a creative work, like a book." },
+    { tag: "<code>", description: "Marks inline code snippets, monospace font." },
+    { tag: "<col>", description: "Defines column properties in a table." },
+    { tag: "<colgroup>", description: "Groups columns for styling in a table." },
+    { tag: "<data>", description: "Links content with a machine-readable value." },
+    { tag: "<datalist>", description: "Provides autocomplete options for inputs." },
+    { tag: "<dd>", description: "Describes a term in a description list." },
+    { tag: "<del>", description: "Marks text as deleted, often strikethrough." },
+    { tag: "<details>", description: "Creates a collapsible section with a toggle." },
+    { tag: "<dfn>", description: "Marks a term being defined." },
+    { tag: "<dialog>", description: "Defines a popup or modal dialog." },
+    { tag: "<div>", description: "A generic block container for content." },
+    { tag: "<dl>", description: "Creates a description list of terms and details." },
+    { tag: "<dt>", description: "Defines a term in a description list." },
+    { tag: "<em>", description: "Emphasizes text, typically italicized." },
+    { tag: "<embed>", description: "Inserts external content, like applets." },
+    { tag: "<fieldset>", description: "Groups form controls with a border." },
+    { tag: "<figcaption>", description: "Captions a figure element." },
+    { tag: "<figure>", description: "Groups media with an optional caption." },
+    { tag: "<footer>", description: "Holds footer content, like copyrights." },
+    { tag: "<form>", description: "Creates a user input form." },
+    { tag: "<h1>", description: "Defines the top-level heading." },
+    { tag: "<h2>", description: "Defines a second-level heading." },
+    { tag: "<h3>", description: "Defines a third-level heading." },
+    { tag: "<h4>", description: "Defines a fourth-level heading." },
+    { tag: "<h5>", description: "Defines a fifth-level heading." },
+    { tag: "<h6>", description: "Defines a sixth-level heading." },
+    { tag: "<head>", description: "Contains metadata about the document." },
+    { tag: "<header>", description: "Marks introductory content, like navbars." },
+    { tag: "<hr>", description: "Creates a thematic break, like a line." },
+    { tag: "<html>", description: "The root element of an HTML document." },
+    { tag: "<i>", description: "Applies italic styling, non-semantic." },
+    { tag: "<iframe>", description: "Embeds external content in a frame." },
+    { tag: "<img>", description: "Embeds an image, with alt for accessibility." },
+    { tag: "<input>", description: "Creates form input fields, like text or radio." },
+    { tag: "<ins>", description: "Marks text as inserted, often underlined." },
+    { tag: "<kbd>", description: "Indicates keyboard input, like shortcuts." },
+    { tag: "<label>", description: "Describes a form input for accessibility." },
+    { tag: "<legend>", description: "Captions a fieldset in a form." },
+    { tag: "<li>", description: "Defines a list item in ul or ol." },
+    { tag: "<link>", description: "Connects external resources, like CSS." },
+    { tag: "<main>", description: "Holds the primary content of a page." },
+    { tag: "<map>", description: "Defines an image map with clickable areas." },
+    { tag: "<mark>", description: "Highlights text for emphasis." },
+    { tag: "<meta>", description: "Provides metadata, like charset." },
+    { tag: "<meter>", description: "Displays a scalar value in a range." },
+    { tag: "<nav>", description: "Marks navigation links, like menus." },
+    { tag: "<noscript>", description: "Shows content if JavaScript is disabled." },
+    { tag: "<object>", description: "Embeds multimedia, like PDFs." },
+    { tag: "<ol>", description: "Creates an ordered, numbered list." },
+    { tag: "<optgroup>", description: "Groups options in a select menu." },
+    { tag: "<option>", description: "Defines an item in a select or datalist." },
+    { tag: "<output>", description: "Shows form calculation results." },
+    { tag: "<p>", description: "Defines a paragraph of text." },
+    { tag: "<param>", description: "Sets parameters for an object element." },
+    { tag: "<picture>", description: "Provides multiple image sources." },
+    { tag: "<pre>", description: "Displays preformatted text with spacing." },
+    { tag: "<progress>", description: "Shows task completion, like downloads." },
+    { tag: "<q>", description: "Marks short, inline quotations." },
+    { tag: "<rp>", description: "Provides fallback for ruby annotations." },
+    { tag: "<rt>", description: "Defines ruby text for annotations." },
+    { tag: "<ruby>", description: "Marks text with pronunciation annotations." },
+    { tag: "<s>", description: "Marks text as no longer relevant." },
+    { tag: "<samp>", description: "Shows sample program output." },
+    { tag: "<script>", description: "Embeds or links JavaScript code." },
+    { tag: "<section>", description: "Groups related content, like chapters." },
+    { tag: "<select>", description: "Creates a dropdown menu." },
+    { tag: "<small>", description: "Marks fine print or side comments." },
+    { tag: "<source>", description: "Specifies media sources for audio/video." },
+    { tag: "<span>", description: "A generic inline container." },
+    { tag: "<strong>", description: "Marks important text, typically bold." },
+    { tag: "<style>", description: "Embeds CSS styles in the document." },
+    { tag: "<sub>", description: "Lowers text as a subscript." },
+    { tag: "<summary>", description: "Toggles a details element’s content." },
+    { tag: "<sup>", description: "Raises text as a superscript." },
+    { tag: "<svg>", description: "Embeds scalable vector graphics." },
+    { tag: "<table>", description: "Organizes data in rows and columns." },
+    { tag: "<tbody>", description: "Groups table body rows." },
+    { tag: "<td>", description: "Defines a table data cell." },
+    { tag: "<template>", description: "Holds reusable content for JavaScript." },
+    { tag: "<textarea>", description: "Creates a multi-line text input." },
+    { tag: "<tfoot>", description: "Groups table footer rows." },
+    { tag: "<th>", description: "Defines a table header cell." },
+    { tag: "<thead>", description: "Groups table header rows." },
+    { tag: "<time>", description: "Marks a date or time." },
+    { tag: "<title>", description: "Sets the page title in the browser." },
+    { tag: "<tr>", description: "Defines a table row." },
+    { tag: "<track>", description: "Adds captions to audio/video." },
+    { tag: "<u>", description: "Applies underline styling, non-semantic." },
+    { tag: "<ul>", description: "Creates an unordered, bulleted list." },
+    { tag: "<var>", description: "Denotes a variable in code or math." },
+    { tag: "<video>", description: "Embeds video with playback controls." },
+    { tag: "<wbr>", description: "Suggests a word break opportunity." }
+];
+
+// Test Questions (50 questions)
+const testQuestions = [
+    {
+        question: "What does HTML stand for?",
+        options: ["HyperText Markup Language", "HighText Machine Language", "HyperTool Multi Language", "HyperText Markdown Language"],
+        answer: 0
+    },
+    {
+        question: "Which tag is the root element of an HTML document?",
+        options: ["<body>", "<html>", "<head>", "<div>"],
+        answer: 1
+    },
+    {
+        question: "What attribute specifies the character encoding?",
+        options: ["lang", "charset", "encoding", "type"],
+        answer: 1
+    },
+    {
+        question: "Which tag contains visible content?",
+        options: ["<head>", "<meta>", "<body>", "<title>"],
+        answer: 2
+    },
+    {
+        question: "What tag defines the largest heading?",
+        options: ["<h6>", "<h1>", "<h3>", "<header>"],
+        answer: 1
+    },
+    {
+        question: "Which tag creates a paragraph?",
+        options: ["<p>", "<div>", "<span>", "<text>"],
+        answer: 0
+    },
+    {
+        question: "What tag makes a hyperlink?",
+        options: ["<link>", "<a>", "<href>", "<url>"],
+        answer: 1
+    },
+    {
+        question: "Which attribute provides image descriptions?",
+        options: ["src", "href", "alt", "title"],
+        answer: 2
+    },
+    {
+        question: "What tag creates an unordered list?",
+        options: ["<ol>", "<ul>", "<li>", "<list>"],
+        answer: 1
+    },
+    {
+        question: "Which tag is a list item?",
+        options: ["<ul>", "<ol>", "<li>", "<dl>"],
+        answer: 2
+    },
+    {
+        question: "What is a generic block container?",
+        options: ["<span>", "<div>", "<p>", "<section>"],
+        answer: 1
+    },
+    {
+        question: "Which tag is an inline container?",
+        options: ["<div>", "<section>", "<span>", "<article>"],
+        answer: 2
+    },
+    {
+        question: "What tag emphasizes text as bold?",
+        options: ["<em>", "<strong>", "<i>", "<b>"],
+        answer: 1
+    },
+    {
+        question: "Which tag inserts a line break?",
+        options: ["<hr>", "<br>", "<break>", "<lb>"],
+        answer: 1
+    },
+    {
+        question: "What tag creates a thematic break?",
+        options: ["<br>", "<hr>", "<div>", "<section>"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines introductory content?",
+        options: ["<footer>", "<header>", "<main>", "<nav>"],
+        answer: 1
+    },
+    {
+        question: "What tag holds footer content?",
+        options: ["<header>", "<main>", "<footer>", "<section>"],
+        answer: 2
+    },
+    {
+        question: "Which tag marks navigation links?",
+        options: ["<nav>", "<link>", "<a>", "<menu>"],
+        answer: 0
+    },
+    {
+        question: "What tag represents standalone content?",
+        options: ["<section>", "<article>", "<div>", "<main>"],
+        answer: 1
+    },
+    {
+        question: "Which tag groups related content?",
+        options: ["<article>", "<div>", "<section>", "<aside>"],
+        answer: 2
+    },
+    {
+        question: "What tag holds primary content?",
+        options: ["<header>", "<main>", "<footer>", "<body>"],
+        answer: 1
+    },
+    {
+        question: "Which tag creates a form?",
+        options: ["<input>", "<form>", "<button>", "<label>"],
+        answer: 1
+    },
+    {
+        question: "What tag creates a form input?",
+        options: ["<form>", "<input>", "<button>", "<select>"],
+        answer: 1
+    },
+    {
+        question: "Which tag describes an input?",
+        options: ["<label>", "<legend>", "<caption>", "<title>"],
+        answer: 0
+    },
+    {
+        question: "What tag makes a clickable button?",
+        options: ["<input>", "<button>", "<a>", "<div>"],
+        answer: 1
+    },
+    {
+        question: "Which tag allows multi-line input?",
+        options: ["<input>", "<textarea>", "<select>", "<output>"],
+        answer: 1
+    },
+    {
+        question: "What tag creates a dropdown menu?",
+        options: ["<input>", "<select>", "<option>", "<datalist>"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines dropdown items?",
+        options: ["<select>", "<option>", "<datalist>", "<li>"],
+        answer: 1
+    },
+    {
+        question: "What tag organizes data in a grid?",
+        options: ["<div>", "<table>", "<grid>", "<section>"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines a table row?",
+        options: ["<td>", "<th>", "<tr>", "<table>"],
+        answer: 2
+    },
+    {
+        question: "What tag is a table data cell?",
+        options: ["<tr>", "<td>", "<th>", "<caption>"],
+        answer: 1
+    },
+    {
+        question: "Which tag defines a table header?",
+        options: ["<td>", "<tr>", "<th>", "<thead>"],
+        answer: 2
+    },
+    {
+        question: "What tag adds a table title?",
+        options: ["<title>", "<caption>", "<label>", "<legend>"],
+        answer: 1
+    },
+    {
+        question: "Which tag groups table body rows?",
+        options: ["<thead>", "<tbody>", "<tfoot>", "<table>"],
+        answer: 1
+    },
+    {
+        question: "What tag groups table header rows?",
+        options: ["<tbody>", "<thead>", "<tfoot>", "<tr>"],
+        answer: 1
+    },
+    {
+        question: "Which tag embeds audio?",
+        options: ["<video>", "<audio>", "<media>", "<source>"],
+        answer: 1
+    },
+    {
+        question: "What tag embeds video?",
+        options: ["<audio>", "<video>", "<iframe>", "<object>"],
+        answer: 1
+    },
+    {
+        question: "Which tag embeds external content?",
+        options: ["<video>", "<audio>", "<iframe>", "<canvas>"],
+        answer: 2
+    },
+    {
+        question: "What tag provides metadata?",
+        options: ["<head>", "<meta>", "<title>", "<link>"],
+        answer: 1
+    },
+    {
+        question: "Which tag sets the page title?",
+        options: ["<meta>", "<title>", "<head>", "<header>"],
+        answer: 1
+    },
+    {
+        question: "What tag links to CSS?",
+        options: ["<style>", "<script>", "<link>", "<href>"],
+        answer: 2
+    },
+    {
+        question: "Which is an HTML comment?",
+        options: ["// Comment", "<!-- Comment -->", "# Comment", "/* Comment */"],
+        answer: 1
+    },
+    {
+        question: "What attribute is unique per element?",
+        options: ["class", "id", "name", "type"],
+        answer: 1
+    },
+    {
+        question: "Which attribute groups elements?",
+        options: ["id", "class", "name", "for"],
+        answer: 1
+    },
+    {
+        question: "What attribute links an <a> tag?",
+        options: ["src", "href", "alt", "link"],
+        answer: 1
+    },
+    {
+        question: "Which attribute aids image accessibility?",
+        options: ["src", "href", "alt", "title"],
+        answer: 2
+    },
+    {
+        question: "What attribute sets media paths?",
+        options: ["href", "src", "alt", "data"],
+        answer: 1
+    },
+    {
+        question: "Which tag creates a collapsible section?",
+        options: ["<dialog>", "<details>", "<summary>", "<aside>"],
+        answer: 1
+    },
+    {
+        question: "What tag shows a scalar value?",
+        options: ["<progress>", "<meter>", "<output>", "<data>"],
+        answer: 1
+    },
+    {
+        question: "Which tag highlights text?",
+        options: ["<strong>", "<em>", "<mark>", "<b>"],
+        answer: 2
+    }
+];
+
+// Initialize State
+let currentLesson = parseInt(localStorage.getItem('currentLesson')) || 0;
+let currentTestPage = parseInt(localStorage.getItem('currentTestPage')) || 0;
+let userAnswers = JSON.parse(localStorage.getItem('userAnswers')) || {};
+
+// Tab Switching
+document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(button.dataset.tab).classList.add('active');
+    });
+});
+
+// Lessons: Generate Grid Links
+const lessonLinks = document.querySelector('.lesson-links');
+for (let i = 0; i < lessons.length; i++) {
+    const link = document.createElement('a');
+    link.href = '#';
+    link.textContent = i + 1;
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentLesson = i;
+        localStorage.setItem('currentLesson', currentLesson);
+        displayLesson();
+    });
+    lessonLinks.appendChild(link);
+}
+
+// Lessons: Display Current Lesson
+function displayLesson() {
+    const lesson = lessons[currentLesson];
+    document.getElementById('lesson-title').textContent = lesson.title;
+    document.getElementById('lesson-content').innerHTML = lesson.content;
+    document.getElementById('prev-lesson').disabled = currentLesson === 0;
+    document.getElementById('next-lesson').disabled = currentLesson === lessons.length - 1;
+    document.querySelectorAll('.lesson-links a').forEach((link, index) => {
+        link.classList.toggle('active', index === currentLesson);
+    });
+}
+
+// Lessons: Navigation
+document.getElementById('prev-lesson').addEventListener('click', () => {
+    if (currentLesson > 0) {
+        currentLesson--;
+        localStorage.setItem('currentLesson', currentLesson);
+        displayLesson();
+    }
+});
+document.getElementById('next-lesson').addEventListener('click', () => {
+    if (currentLesson < lessons.length - 1) {
+        currentLesson++;
+        localStorage.setItem('currentLesson', currentLesson);
+        displayLesson();
+    }
+});
+
+// Test: Display Questions (10 per page)
+function displayTestPage() {
+    const start = currentTestPage * 10;
+    const end = Math.min(start + 10, testQuestions.length);
+    const testContent = document.getElementById('test-content');
+    testContent.innerHTML = '';
+    
+    if (currentTestPage === Math.ceil(testQuestions.length / 10)) {
+        showTestSummary();
+        return;
+    }
+
+    for (let i = start; i < end; i++) {
+        const q = testQuestions[i];
+        const form = document.createElement('form');
+        form.innerHTML = `
+            <p>${i + 1}. ${q.question}</p>
+            ${q.options.map((opt, j) => `
+                <label>
+                    <input type="radio" name="q${i}" value="${j}" ${userAnswers[i] == j ? 'checked' : ''}>
+                    ${opt}
+                </label>
+            `).join('<br>')}
+            <button type="submit">Submit</button>
+            <div class="feedback"></div>
+        `;
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const selected = form.querySelector(`input[name="q${i}"]:checked`);
+            if (selected) {
+                userAnswers[i] = parseInt(selected.value);
+                localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+                const feedback = form.querySelector('.feedback');
+                feedback.textContent = userAnswers[i] === q.answer ? 'Correct!' : `Incorrect. The answer is: ${q.options[q.answer]}.`;
+            }
+        });
+        testContent.appendChild(form);
+    }
+
+    document.getElementById('test-progress').textContent = `Page ${currentTestPage + 1} of ${Math.ceil(testQuestions.length / 10) + 1}`;
+    document.getElementById('prev-test').disabled = currentTestPage === 0;
+    document.getElementById('next-test').disabled = currentTestPage === Math.ceil(testQuestions.length / 10) - 1;
+}
+
+// Test: Summary
+function showTestSummary() {
+    const testContent = document.getElementById('test-content');
+    testContent.innerHTML = '';
+    let score = 0;
+    let incorrect = [];
+    testQuestions.forEach((q, i) => {
+        if (userAnswers[i] === q.answer) {
+            score++;
+        } else {
+            incorrect.push(`Question ${i + 1}: ${q.question} (Your answer: ${userAnswers[i] !== undefined ? q.options[userAnswers[i]] : 'None'}, Correct: ${q.options[q.answer]})`);
+        }
+    });
+    const summary = document.getElementById('test-summary');
+    summary.innerHTML = `
+        <h3>Test Results</h3>
+        <p>Score: ${score} out of ${testQuestions.length} (${((score / testQuestions.length) * 100).toFixed(2)}%)</p>
+        ${incorrect.length ? '<h4>Incorrect Answers:</h4><ul>' + incorrect.map(item => `<li>${item}</li>`).join('') + '</ul>' : '<p>All correct!</p>'}
+    `;
+    document.getElementById('test-progress').textContent = `Summary`;
+    document.getElementById('prev-test').disabled = false;
+    document.getElementById('next-test').disabled = true;
+}
+
+// Test: Navigation
+document.getElementById('prev-test').addEventListener('click', () => {
+    if (currentTestPage > 0) {
+        currentTestPage--;
+        localStorage.setItem('currentTestPage', currentTestPage);
+        document.getElementById('test-summary').innerHTML = '';
+        displayTestPage();
+    }
+});
+document.getElementById('next-test').addEventListener('click', () => {
+    if (currentTestPage < Math.ceil(testQuestions.length / 10)) {
+        currentTestPage++;
+        localStorage.setItem('currentTestPage', currentTestPage);
+        displayTestPage();
+    }
+});
+
+// Library: Display and Search
+function displayLibrary(searchTerm = '') {
+    const libraryContent = document.getElementById('library-content');
+    libraryContent.innerHTML = '';
+    const filtered = library.filter(item => 
+        item.tag.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        item.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    filtered.forEach(item => {
+        const details = document.createElement('details');
+        details.innerHTML = `
+            <summary>${item.tag}</summary>
+            <p>${item.description}</p>
+        `;
+        libraryContent.appendChild(details);
+    });
+}
+
+document.getElementById('library-search').addEventListener('input', (e) => {
+    displayLibrary(e.target.value);
+});
+
+// Initialize
+displayLesson();
+displayTestPage();
+displayLibrary();
