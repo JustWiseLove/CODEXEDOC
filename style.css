@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.lesson-nav, .test-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.lesson-body, .test-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.lesson-links a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.lesson-links a:hover {
+    background: #0056b3;
+}
+
+.lesson-links a.active {
+    background: #28a745;
+}
+
+.demo-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+pre {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.test-content form {
+    margin-bottom: 20px;
+}
+
+.test-content label {
+    display: block;
+    margin: 5px 0;
+}
+
+.test-summary {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#library-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#library-content details {
+    margin-bottom: 10px;
+}
+
+#library-content summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
