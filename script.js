@@ -5,13 +5,11 @@ const lessons = [
         content: `
             <p>HTML (HyperText Markup Language) is the backbone of web pages, structuring content like text, images, and links. It uses tags to define elements, creating a tree-like structure called the DOM (Document Object Model). HTML5, the latest version, adds semantic tags and multimedia support, enabling accessible, interactive sites. Learning HTML unlocks web development’s foundation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<html>
-    <body>
-        <p>Hello, World!</p>
-    </body>
-</html>
-            </pre>
+            <pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello, World!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Hello, World!</p>
@@ -23,16 +21,14 @@ const lessons = [
         content: `
             <p>The <code>&lt;html&gt;</code> tag is the root of an HTML document, containing all other tags. It’s a container, typically including <code>&lt;head&gt;</code> for metadata and <code>&lt;body&gt;</code> for content. The <code>lang</code> attribute (e.g., <code>lang="en"</code>) aids accessibility, telling browsers and screen readers the page’s language. It sets up every web page.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<html lang="en">
-    <head>
-        <title>My Page</title>
-    </head>
-    <body>
-        <p>Content</p>
-    </body>
-</html>
-            </pre>
+            <pre><code>&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Content&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Content</p>
@@ -44,12 +40,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;head&gt;</code> tag holds metadata about the document, like the title, character set, and links to stylesheets. It’s invisible to users but critical for browsers and search engines. Elements like <code>&lt;title&gt;</code> and <code>&lt;meta&gt;</code> inside it define page properties. The head ensures proper rendering and SEO.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<head>
-    <title>My Site</title>
-    <meta charset="UTF-8">
-</head>
-            </pre>
+            <pre><code>&lt;head&gt;
+    &lt;title&gt;My Site&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Head content is invisible]</p>
@@ -61,12 +55,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;body&gt;</code> tag contains all visible content, like text, images, and links. It’s the main area users interact with, holding elements like <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, or <code>&lt;img&gt;</code>. It’s a block-level element, structuring the page’s layout. The body brings websites to life.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<body>
-    <h1>Welcome</h1>
-    <p>This is my site.</p>
-</body>
-            </pre>
+            <pre><code>&lt;body&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+    &lt;p&gt;This is my site.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <h1>Welcome</h1>
@@ -79,10 +71,8 @@ const lessons = [
         content: `
             <p>Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) organize content hierarchically, with <code>&lt;h1&gt;</code> as the most important (largest) and <code>&lt;h6&gt;</code> the least. They’re block-level, semantic elements, aiding SEO and accessibility. Screen readers use them for navigation. Headings clarify structure and emphasis.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<h1>Main Title</h1>
-<h2>Subtitle</h2>
-            </pre>
+            <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Subtitle&lt;/h2&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <h1>Main Title</h1>
@@ -95,9 +85,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;p&gt;</code> tag defines a paragraph, grouping text for readability. It’s a block-level element, adding spacing before and after. Paragraphs are essential for articles, descriptions, or stories, ensuring clear content flow. They’re simple but vital for web text.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>This is a paragraph.</p>
-            </pre>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>This is a paragraph.</p>
@@ -109,9 +97,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;a&gt;</code> tag creates hyperlinks, connecting pages or resources via the <code>href</code> attribute. It’s an inline element, often wrapping text or images. The <code>target</code> attribute (e.g., <code>_blank</code>) controls link behavior. Links enable navigation, making the web interconnected.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<a href="https://example.com">Visit</a>
-            </pre>
+            <pre><code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <a href="https://example.com">Visit</a>
@@ -123,9 +109,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;img&gt;</code> tag embeds images, using <code>src</code> for the file path and <code>alt</code> for accessibility. It’s a self-closing, inline element, enhancing visual appeal. The <code>alt</code> text aids screen readers and SEO. Images make pages engaging and informative.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<img src="photo.jpg" alt="A photo">
-            </pre>
+            <pre><code>&lt;img src="photo.jpg" alt="A photo"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Image placeholder]</p>
@@ -137,12 +121,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;ul&gt;</code> tag creates unordered (bulleted) lists, while <code>&lt;ol&gt;</code> makes ordered (numbered) ones. Both are block-level, containing <code>&lt;li&gt;</code> items. Lists organize content, like menus or steps, improving readability. They’re semantic and accessible.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-</ul>
-            </pre>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <ul>
@@ -157,12 +139,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;li&gt;</code> tag defines items in <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> lists. It’s a block-level element, holding text, links, or other content. List items structure information clearly, aiding navigation and comprehension. They’re essential for organized content.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<ol>
-    <li>First</li>
-    <li>Second</li>
-</ol>
-            </pre>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First&lt;/li&gt;
+    &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <ol>
@@ -177,11 +157,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;div&gt;</code> tag is a block-level container for grouping content or styling. It’s non-semantic, often used for layout with CSS classes or IDs. Divs are versatile, structuring sections like headers or columns. They’re a core tool for web design.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<div>
-    <p>Content</p>
-</div>
-            </pre>
+            <pre><code>&lt;div&gt;
+    &lt;p&gt;Content&lt;/p&gt;
+&lt;/div&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <div>
@@ -195,9 +173,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;span&gt;</code> tag is an inline container for styling or scripting small text portions. It’s non-semantic, often used with CSS classes to highlight words or phrases. Spans add flexibility without breaking text flow. They’re perfect for minor tweaks.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Text with <span>highlight</span>.</p>
-            </pre>
+            <pre><code>&lt;p&gt;Text with &lt;span&gt;highlight&lt;/span&gt;.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Text with <span>highlight</span>.</p>
@@ -209,9 +185,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;strong&gt;</code> tag indicates important text, typically bold, while <code>&lt;em&gt;</code> shows emphasis, usually italicized. Both are inline and semantic, aiding accessibility and SEO. They convey meaning, not just style, to users and screen readers. They enhance text clarity.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p><strong>Bold</strong> and <em>italic</em>.</p>
-            </pre>
+            <pre><code>&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt; and &lt;em&gt;italic&lt;/em&gt;.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p><strong>Bold</strong> and <em>italic</em>.</p>
@@ -223,9 +197,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;br&gt;</code> tag inserts a line break within text, forcing content to the next line. It’s a self-closing, inline element, useful for addresses or poems. Overuse can harm accessibility; CSS is often better for spacing. Breaks control text flow simply.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Line one<br>Line two</p>
-            </pre>
+            <pre><code>&lt;p&gt;Line one&lt;br&gt;Line two&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Line one<br>Line two</p>
@@ -237,11 +209,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;hr&gt;</code> tag creates a thematic break, like a horizontal line, to separate sections. It’s a self-closing, block-level element, often styled with CSS. It signals a content shift, enhancing readability. Horizontal rules add visual structure to pages.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Section one</p>
-<hr>
-<p>Section two</p>
-            </pre>
+            <pre><code>&lt;p&gt;Section one&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Section two&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Section one</p>
@@ -255,11 +225,9 @@ const lessons = [
         content: `
             <p>Semantic elements, like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, or <code>&lt;article&gt;</code>, describe their purpose clearly. They’re block-level, improving accessibility and SEO by defining content roles. Unlike <code>&lt;div&gt;</code>, they convey meaning to browsers and screen readers. Semantics make code intuitive and structured.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<header>
-    <h1>My Site</h1>
-</header>
-            </pre>
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;My Site&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <header>
@@ -273,11 +241,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;header&gt;</code> tag defines introductory content, like logos, navbars, or titles. It’s a block-level, semantic element, often at the page or section top. It aids accessibility by marking key areas. Headers set the tone for user experience.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<header>
-    <h1>Welcome</h1>
-</header>
-            </pre>
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <header>
@@ -291,11 +257,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;footer&gt;</code> tag holds closing content, like copyrights or contact info. It’s a block-level, semantic element, typically at the page or section bottom. It clarifies structure for screen readers and SEO. Footers provide essential endnotes.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<footer>
-    <p>© 2025</p>
-</footer>
-            </pre>
+            <pre><code>&lt;footer&gt;
+    &lt;p&gt;© 2025&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <footer>
@@ -309,11 +273,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;nav&gt;</code> tag marks navigation links, like menus or breadcrumbs. It’s a block-level, semantic element, helping screen readers identify key navigation areas. It often contains <code>&lt;ul&gt;</code> or <code>&lt;a&gt;</code> tags. Navs guide users efficiently.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<nav>
-    <a href="#">Home</a>
-</nav>
-            </pre>
+            <pre><code>&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <nav>
@@ -327,12 +289,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;article&gt;</code> tag represents standalone content, like blog posts or news items. It’s a block-level, semantic element, reusable across contexts. It aids SEO and accessibility by defining complete units. Articles make content modular and clear.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<article>
-    <h2>News</h2>
-    <p>Story here.</p>
-</article>
-            </pre>
+            <pre><code>&lt;article&gt;
+    &lt;h2&gt;News&lt;/h2&gt;
+    &lt;p&gt;Story here.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <article>
@@ -347,12 +307,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;section&gt;</code> tag groups related content, like chapters or tabs. It’s a block-level, semantic element, often with a heading. It clarifies structure for accessibility and SEO, unlike generic <code>&lt;div&gt;</code>. Sections organize pages logically.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<section>
-    <h2>Part</h2>
-    <p>Details.</p>
-</section>
-            </pre>
+            <pre><code>&lt;section&gt;
+    &lt;h2&gt;Part&lt;/h2&gt;
+    &lt;p&gt;Details.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <section>
@@ -367,11 +325,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;main&gt;</code> tag holds the primary content, like articles or forms, excluding headers or footers. It’s a block-level, semantic element, used once per page. It helps screen readers focus on the core section. Main clarifies page focus.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<main>
-    <p>Main content.</p>
-</main>
-            </pre>
+            <pre><code>&lt;main&gt;
+    &lt;p&gt;Main content.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <main>
@@ -385,11 +341,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;form&gt;</code> tag creates interactive forms for user input, like text or buttons. It’s a block-level element, using <code>action</code> and <code>method</code> attributes to process data. Forms are essential for logins or surveys, enabling user engagement.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<form action="/submit">
-    <input type="text">
-</form>
-            </pre>
+            <pre><code>&lt;form action="/submit"&gt;
+    &lt;input type="text"&gt;
+&lt;/form&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <form action="/submit">
@@ -403,9 +357,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;input&gt;</code> tag creates fields for user data, like text or checkboxes. It’s a self-closing, inline element, with types like <code>text</code> or <code>radio</code>. Attributes like <code>name</code> or <code>required</code> add functionality. Inputs power form interactions.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input type="text" name="name">
-            </pre>
+            <pre><code>&lt;input type="text" name="name"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input type="text" name="name">
@@ -417,10 +369,8 @@ const lessons = [
         content: `
             <p>The <code>&lt;label&gt;</code> tag describes an <code>&lt;input&gt;</code>, improving accessibility. It’s inline, linked via the <code>for</code> attribute to an input’s <code>id</code>. Clicking a label focuses its input, aiding usability. Labels clarify form fields for all users.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<label for="name">Name:</label>
-<input id="name" type="text">
-            </pre>
+            <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input id="name" type="text"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <label for="name">Name:</label>
@@ -433,9 +383,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;button&gt;</code> tag creates clickable elements, often for form submission. It’s an inline-block element, with types like <code>submit</code> or <code>button</code>. Accessible with <code>aria-label</code>, buttons trigger actions. They’re key for interactivity.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<button>Click</button>
-            </pre>
+            <pre><code>&lt;button&gt;Click&lt;/button&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <button>Click</button>
@@ -447,9 +395,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;textarea&gt;</code> tag allows multi-line text input, ideal for comments or messages. It’s a block-level element, with <code>rows</code> and <code>cols</code> for size. It’s accessible with labels, supporting longer user input. Textareas enhance form flexibility.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<textarea rows="4" cols="50"></textarea>
-            </pre>
+            <pre><code>&lt;textarea rows="4" cols="50"&gt;&lt;/textarea&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <textarea rows="4" cols="50"></textarea>
@@ -461,12 +407,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;select&gt;</code> tag creates dropdown menus, with <code>&lt;option&gt;</code> tags for choices. It’s an inline-block element, accessible via keyboard and screen readers. The <code>name</code> attribute sends data. Selects simplify user choices in forms.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<select name="choice">
-    <option>Option 1</option>
-    <option>Option 2</option>
-</select>
-            </pre>
+            <pre><code>&lt;select name="choice"&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <select name="choice">
@@ -481,12 +425,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;option&gt;</code> tag defines items in a <code>&lt;select&gt;</code> dropdown. It uses the <code>value</code> attribute for submitted data, with <code>selected</code> for defaults. It’s accessible, ensuring clear choices. Options make dropdowns functional and user-friendly.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<select>
-    <option value="a">A</option>
-    <option value="b">B</option>
-</select>
-            </pre>
+            <pre><code>&lt;select&gt;
+    &lt;option value="a"&gt;A&lt;/option&gt;
+    &lt;option value="b"&gt;B&lt;/option&gt;
+&lt;/select&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <select>
@@ -501,13 +443,11 @@ const lessons = [
         content: `
             <p>The <code>&lt;table&gt;</code> tag organizes data in rows and columns, ideal for schedules or stats. It’s a block-level element, containing <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, or <code>&lt;th&gt;</code>. Accessible with captions, tables present data clearly. They’re powerful for structured displays.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <tr>
-        <td>Cell</td>
-    </tr>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -523,13 +463,11 @@ const lessons = [
         content: `
             <p>The <code>&lt;tr&gt;</code> tag defines a table row, holding <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> cells. It’s a block-level element, organizing data horizontally. Rows ensure consistent layouts, crucial for table clarity. They’re the backbone of table structure.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <tr>
-        <td>Row 1</td>
-    </tr>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -545,11 +483,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;td&gt;</code> tag creates a table data cell, holding text, images, or links. It’s a block-level element within <code>&lt;tr&gt;</code>, aligned in columns. Cells display content clearly, supporting accessibility. They’re essential for table functionality.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<tr>
-    <td>Data</td>
-</tr>
-            </pre>
+            <pre><code>&lt;tr&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -565,11 +501,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;th&gt;</code> tag defines a table header cell, often bold and centered. It’s a block-level element, using <code>scope</code> (e.g., <code>col</code>) for accessibility. Headers label columns or rows, aiding screen readers. They clarify table structure.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<tr>
-    <th scope="col">Header</th>
-</tr>
-            </pre>
+            <pre><code>&lt;tr&gt;
+    &lt;th scope="col"&gt;Header&lt;/th&gt;
+&lt;/tr&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -585,14 +519,12 @@ const lessons = [
         content: `
             <p>The <code>&lt;caption&gt;</code> tag adds a title to a <code>&lt;table&gt;</code>, summarizing its content. It’s a block-level element, placed right after the table tag. Captions aid accessibility, explaining purpose to screen readers. They make tables more informative.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <caption>Data</caption>
-    <tr>
-        <td>Cell</td>
-    </tr>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;caption&gt;Data&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -609,15 +541,13 @@ const lessons = [
         content: `
             <p>The <code>&lt;tbody&gt;</code> tag groups the main data rows in a <code>&lt;table&gt;</code>. It’s a block-level element, used with <code>&lt;thead&gt;</code> or <code>&lt;tfoot&gt;</code> for structure. It aids accessibility by defining content scope. Table bodies organize data clearly.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <tbody>
-        <tr>
-            <td>Cell</td>
-        </tr>
-    </tbody>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Cell&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -635,15 +565,13 @@ const lessons = [
         content: `
             <p>The <code>&lt;thead&gt;</code> tag groups header rows in a <code>&lt;table&gt;</code>, typically with <code>&lt;th&gt;</code>. It’s a block-level element, enhancing table structure for accessibility. It separates headers from data, aiding clarity. Table heads improve data presentation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <thead>
-        <tr>
-            <th>Header</th>
-        </tr>
-    </thead>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -661,11 +589,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;audio&gt;</code> tag embeds sound, like music or podcasts, with <code>src</code> or <code>&lt;source&gt;</code>. It’s a block-level element, offering controls via the <code>controls</code> attribute. It’s accessible with captions, enhancing multimedia. Audio enriches user experiences.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<audio controls>
-    <source src="sound.mp3" type="audio/mp3">
-</audio>
-            </pre>
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="sound.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Audio placeholder - requires a source]</p>
@@ -677,11 +603,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;video&gt;</code> tag embeds clips, using <code>src</code> or <code>&lt;source&gt;</code> for files. It’s a block-level element, with <code>controls</code> for playback and <code>poster</code> for thumbnails. Accessible with captions, videos boost engagement. They’re vital for dynamic content.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<video controls>
-    <source src="clip.mp4" type="video/mp4">
-</video>
-            </pre>
+            <pre><code>&lt;video controls&gt;
+    &lt;source src="clip.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Video placeholder - requires a source]</p>
@@ -693,9 +617,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;iframe&gt;</code> tag embeds external content, like maps or videos, within a page. It’s a block-level element, using <code>src</code> and <code>width</code>/<code>height</code>. Accessibility requires a <code>title</code>. Iframes integrate third-party content seamlessly.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<iframe src="https://example.com" width="300" height="200"></iframe>
-            </pre>
+            <pre><code>&lt;iframe src="https://example.com" width="300" height="200"&gt;&lt;/iframe&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Iframe placeholder - requires a source]</p>
@@ -707,10 +629,8 @@ const lessons = [
         content: `
             <p>The <code>&lt;meta&gt;</code> tag provides metadata, like <code>charset</code> or <code>description</code>, in the <code>&lt;head&gt;</code>. It’s self-closing, affecting rendering or SEO. It’s invisible but critical for browsers and search engines. Meta tags optimize page performance.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<meta charset="UTF-8">
-<meta name="description" content="My site">
-            </pre>
+            <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="My site"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Meta tags are invisible]</p>
@@ -722,9 +642,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;title&gt;</code> tag sets the page’s name, shown in browser tabs. It’s a block-level element in <code>&lt;head&gt;</code>, vital for SEO and accessibility. Clear titles help users and search engines understand content. Titles define page identity.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<title>My Page</title>
-            </pre>
+            <pre><code>&lt;title&gt;My Page&lt;/title&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Title is visible in browser tab]</p>
@@ -736,9 +654,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;link&gt;</code> tag connects external resources, like CSS, via <code>href</code> and <code>rel</code>. It’s self-closing, placed in <code>&lt;head&gt;</code>. It’s invisible but shapes design and functionality. Links enable modular, reusable styles.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<link rel="stylesheet" href="style.css">
-            </pre>
+            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Link is invisible]</p>
@@ -750,10 +666,8 @@ const lessons = [
         content: `
             <p>HTML comments (<code>&lt;!-- --&gt;</code>) annotate code, invisible to users. They explain structure or disable elements for debugging. Comments aid collaboration and maintenance, keeping code clear. They’re a developer’s tool for clarity.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<!-- This is a comment -->
-<p>Visible text</p>
-            </pre>
+            <pre><code>&lt;!-- This is a comment --&gt;
+&lt;p&gt;Visible text&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Visible text</p>
@@ -765,9 +679,7 @@ const lessons = [
         content: `
             <p>The <code>id</code> attribute assigns a unique identifier to an element, used for CSS or JavaScript. It’s global, ensuring one-per-page uniqueness. IDs enable precise targeting, like linking to sections. They’re key for dynamic functionality.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<div id="unique">Content</div>
-            </pre>
+            <pre><code>&lt;div id="unique"&gt;Content&lt;/div&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <div id="unique">Content</div>
@@ -779,9 +691,7 @@ const lessons = [
         content: `
             <p>The <code>class</code> attribute assigns reusable identifiers to elements for styling or scripting. It’s global, allowing multiple classes (e.g., <code>class="btn primary"</code>). Classes group elements logically, streamlining design. They’re essential for consistent styling.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<div class="box">Content</div>
-            </pre>
+            <pre><code>&lt;div class="box"&gt;Content&lt;/div&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <div class="box">Content</div>
@@ -793,9 +703,7 @@ const lessons = [
         content: `
             <p>The <code>href</code> attribute in <code>&lt;a&gt;</code> specifies a link’s destination, like URLs or anchors (e.g., <code>#top</code>). It’s required for functionality, supporting absolute or relative paths. Hrefs enable navigation, connecting the web. They’re core to hyperlinks.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<a href="#section">Jump</a>
-            </pre>
+            <pre><code>&lt;a href="#section"&gt;Jump&lt;/a&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <a href="#section">Jump</a>
@@ -807,9 +715,7 @@ const lessons = [
         content: `
             <p>The <code>alt</code> attribute in <code>&lt;img&gt;</code> provides text descriptions for accessibility. It’s required, aiding screen readers and SEO when images fail to load. Clear alt text describes content or function. It ensures images are inclusive.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<img src="logo.png" alt="Company logo">
-            </pre>
+            <pre><code>&lt;img src="logo.png" alt="Company logo"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Image placeholder]</p>
@@ -821,9 +727,7 @@ const lessons = [
         content: `
             <p>The <code>src</code> attribute specifies file paths for <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, or <code>&lt;audio&gt;</code>. It’s required for media, supporting relative or absolute URLs. Src links content, enabling visuals or sound. It’s vital for multimedia.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<img src="pic.jpg" alt="Picture">
-            </pre>
+            <pre><code>&lt;img src="pic.jpg" alt="Picture"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Image placeholder]</p>
@@ -835,9 +739,7 @@ const lessons = [
         content: `
             <p>The <code>charset</code> attribute in <code>&lt;meta&gt;</code> defines the character encoding, like <code>UTF-8</code>. It’s in <code>&lt;head&gt;</code>, ensuring correct text display across languages. It’s critical for accessibility and rendering. Charsets prevent garbled content.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<meta charset="UTF-8">
-            </pre>
+            <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Charset is invisible]</p>
@@ -849,9 +751,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;meta name="viewport"&gt;</code> tag sets responsive scaling, like <code>width=device-width</code>. It’s in <code>&lt;head&gt;</code>, optimizing mobile display. It’s invisible but ensures layouts adapt to screens. Viewports are key for responsive design.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-            </pre>
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>[Viewport is invisible]</p>
@@ -863,12 +763,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;aside&gt;</code> tag defines supplementary content, like sidebars or callouts, related to the main content. It’s a semantic, block-level element, often used for ads, related links, or notes. It clarifies content hierarchy for screen readers and search engines, enhancing accessibility. Placed within <code>&lt;main&gt;</code> or standalone, it organizes layouts logically. Asides make pages more engaging and structured.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<aside>
-    <h3>Related Links</h3>
-    <p>More info here.</p>
-</aside>
-            </pre>
+            <pre><code>&lt;aside&gt;
+    &lt;h3&gt;Related Links&lt;/h3&gt;
+    &lt;p&gt;More info here.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <aside>
@@ -883,12 +781,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;figure&gt;</code> tag groups self-contained content, like images or diagrams, with optional captions. It’s a semantic, block-level element, enhancing accessibility by linking visuals to descriptions. Often paired with <code>&lt;figcaption&gt;</code>, it clarifies context for users and search engines. Figures are ideal for illustrations or charts. They improve content clarity and presentation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<figure>
-    <img src="chart.jpg" alt="Data chart">
-    <figcaption>A sample data chart.</figcaption>
-</figure>
-            </pre>
+            <pre><code>&lt;figure&gt;
+    &lt;img src="chart.jpg" alt="Data chart"&gt;
+    &lt;figcaption&gt;A sample data chart.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <figure>
@@ -903,12 +799,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;figcaption&gt;</code> tag provides a caption for a <code>&lt;figure&gt;</code>, describing its content, like an image or table. It’s a block-level element, placed before or after the figure’s content. Captions aid accessibility by explaining visuals for screen readers. They’re semantic, improving SEO and user understanding. Figcaptions make figures more informative and engaging.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<figure>
-    <img src="photo.jpg" alt="Scene">
-    <figcaption>A scenic view.</figcaption>
-</figure>
-            </pre>
+            <pre><code>&lt;figure&gt;
+    &lt;img src="photo.jpg" alt="Scene"&gt;
+    &lt;figcaption&gt;A scenic view.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <figure>
@@ -923,11 +817,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;blockquote&gt;</code> tag indicates a lengthy quotation, often indented by browsers. It’s a block-level, semantic element, used for excerpts from other sources, like books or speeches. The <code>cite</code> attribute can link to the source URL. It enhances accessibility by marking quoted content clearly. Blockquotes add credibility and depth to pages.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<blockquote cite="source.com">
-    <p>Words of wisdom.</p>
-</blockquote>
-            </pre>
+            <pre><code>&lt;blockquote cite="source.com"&gt;
+    &lt;p&gt;Words of wisdom.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <blockquote cite="source.com">
@@ -941,9 +833,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;q&gt;</code> tag marks short, inline quotations, typically wrapped in quotes by browsers. It’s a semantic, inline element, ideal for brief phrases within text. The <code>cite</code> attribute references the source, aiding credibility. Unlike <code>&lt;blockquote&gt;</code>, it flows with surrounding content. Inline quotes enhance readability and attribution.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>She said, <q>Carpe diem!</q></p>
-            </pre>
+            <pre><code>&lt;p&gt;She said, &lt;q&gt;Carpe diem!&lt;/q&gt;&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>She said, <q>Carpe diem!</q></p>
@@ -955,9 +845,7 @@ const lessons = [
         content: `
             <p>The <code>type="email"</code> attribute on <code>&lt;input&gt;</code> creates a field for email addresses, with built-in validation. It’s an inline element, ensuring users enter valid formats (e.g., user@domain.com). Mobile keyboards optimize for email entry, improving usability. The <code>pattern</code> attribute can refine validation further. Email inputs streamline form accuracy and user experience.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input type="email" name="email" required>
-            </pre>
+            <pre><code>&lt;input type="email" name="email" required&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input type="email" name="email" required>
@@ -969,9 +857,7 @@ const lessons = [
         content: `
             <p>The <code>type="password"</code> attribute on <code>&lt;input&gt;</code> hides typed characters, ideal for secure fields like logins. It’s inline, showing dots or asterisks to protect privacy. Attributes like <code>minlength</code> enforce security rules. It pairs with <code>&lt;label&gt;</code> for accessibility. Password inputs ensure safe, user-friendly form interactions.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input type="password" name="pass" required>
-            </pre>
+            <pre><code>&lt;input type="password" name="pass" required&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input type="password" name="pass" required>
@@ -983,9 +869,7 @@ const lessons = [
         content: `
             <p>The <code>type="checkbox"</code> attribute on <code>&lt;input&gt;</code> creates toggleable boxes for multiple selections, like preferences. It’s inline, using the <code>value</code> attribute for submitted data. The <code>checked</code> attribute pre-selects options. Checkboxes are accessible with <code>&lt;label&gt;</code>, aiding screen readers. They’re versatile for forms requiring flexibility.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input type="checkbox" name="option" value="yes"> Agree
-            </pre>
+            <pre><code>&lt;input type="checkbox" name="option" value="yes"&gt; Agree</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input type="checkbox" name="option" value="yes"> Agree
@@ -997,10 +881,8 @@ const lessons = [
         content: `
             <p>The <code>type="radio"</code> attribute on <code>&lt;input&gt;</code> creates buttons for single-choice selections, like survey options. It’s inline, requiring the same <code>name</code> for grouping. The <code>value</code> attribute sends the chosen option, with <code>checked</code> for defaults. Radio buttons are clear with <code>&lt;label&gt;</code>, ensuring accessibility. They simplify decision-making in forms.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input type="radio" name="choice" value="a"> Option A
-<input type="radio" name="choice" value="b"> Option B
-            </pre>
+            <pre><code>&lt;input type="radio" name="choice" value="a"&gt; Option A
+&lt;input type="radio" name="choice" value="b"&gt; Option B</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input type="radio" name="choice" value="a"> Option A<br>
@@ -1013,9 +895,7 @@ const lessons = [
         content: `
             <p>The <code>type="file"</code> attribute on <code>&lt;input&gt;</code> allows users to upload files, like images or PDFs. It’s inline, often requiring <code>enctype="multipart/form-data"</code> in the form. The <code>accept</code> attribute filters file types (e.g., <code>.jpg</code>). It’s accessible with <code>&lt;label&gt;</code> for clarity. File inputs enable rich user contributions.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<input type="file" name="upload" accept=".jpg,.png">
-            </pre>
+            <pre><code>&lt;input type="file" name="upload" accept=".jpg,.png"&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <input type="file" name="upload" accept=".jpg,.png">
@@ -1027,17 +907,15 @@ const lessons = [
         content: `
             <p>The <code>colspan</code> attribute on <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> merges cells across columns in a table. It takes a number (e.g., <code>colspan="2"</code>), spanning that many columns. It’s useful for headers or grouped data, enhancing table layouts. Accessibility requires clear context for merged cells. Colspan adds flexibility to table design.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <tr>
-        <th colspan="2">Merged Header</th>
-    </tr>
-    <tr>
-        <td>Cell 1</td>
-        <td>Cell 2</td>
-    </tr>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th colspan="2"&gt;Merged Header&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -1057,17 +935,15 @@ const lessons = [
         content: `
             <p>The <code>rowspan</code> attribute on <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> merges cells across rows in a table. It takes a number (e.g., <code>rowspan="2"</code>), spanning that many rows. It’s ideal for grouping data vertically, like in schedules. Accessibility needs clear labeling for merged cells. Rowspan enhances table structure and readability.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <tr>
-        <td rowspan="2">Merged Cell</td>
-        <td>Cell 1</td>
-    </tr>
-    <tr>
-        <td>Cell 2</td>
-    </tr>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;Merged Cell&lt;/td&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -1087,15 +963,13 @@ const lessons = [
         content: `
             <p>The <code>&lt;tfoot&gt;</code> tag groups footer rows in a <code>&lt;table&gt;</code>, often for summaries like totals. It’s a block-level element, used with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code>. It aids accessibility by defining table conclusions. Table footers clarify data summaries for users.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <tfoot>
-        <tr>
-            <td>Total</td>
-        </tr>
-    </tfoot>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Total&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -1113,17 +987,15 @@ const lessons = [
         content: `
             <p>The <code>&lt;colgroup&gt;</code> tag defines groups of table columns for styling or structure, placed before <code>&lt;thead&gt;</code>. It’s a block-level element, containing <code>&lt;col&gt;</code> tags with attributes like <code>span</code>. It simplifies formatting, like setting column widths. Colgroups enhance table consistency and accessibility.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<table>
-    <colgroup>
-        <col span="2">
-    </colgroup>
-    <tr>
-        <td>Cell</td>
-        <td>Cell</td>
-    </tr>
-</table>
-            </pre>
+            <pre><code>&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2"&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -1143,11 +1015,9 @@ const lessons = [
         content: `
             <p>The <code>&lt;col&gt;</code> tag specifies properties for table columns within a <code>&lt;colgroup&gt;</code>, like width or style. It’s a self-closing element, using <code>span</code> to affect multiple columns. It’s invisible but aids consistent formatting. Columns streamline table design for clarity.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<colgroup>
-    <col span="1" class="highlighted-col">
-</colgroup>
-            </pre>
+            <pre><code>&lt;colgroup&gt;
+    &lt;col span="1" class="highlighted-col"&gt;
+&lt;/colgroup&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <table>
@@ -1166,12 +1036,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;ol&gt;</code> tag creates ordered lists with numbered items, ideal for steps or rankings. It’s a block-level, semantic element, containing <code>&lt;li&gt;</code> tags. Attributes like <code>type</code> (e.g., <code>1</code>, <code>a</code>) customize numbering. Ordered lists ensure clear, sequential presentation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<ol>
-    <li>Step 1</li>
-    <li>Step 2</li>
-</ol>
-            </pre>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Step 1&lt;/li&gt;
+    &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <ol>
@@ -1186,12 +1054,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;dl&gt;</code> tag creates description lists, pairing terms (<code>&lt;dt&gt;</code>) with details (<code>&lt;dd&gt;</code>). It’s a block-level, semantic element, ideal for glossaries or FAQs. It enhances accessibility by structuring relationships clearly. Description lists organize complex data intuitively.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<dl>
-    <dt>Term</dt>
-    <dd>Definition</dd>
-</dl>
-            </pre>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <dl>
@@ -1206,12 +1072,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;dt&gt;</code> tag defines a term in a <code>&lt;dl&gt;</code> description list, paired with <code>&lt;dd&gt;</code>. It’s a block-level element, providing the subject for definitions. It’s semantic, aiding accessibility and clarity. Terms anchor list structures effectively.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<dl>
-    <dt>HTML</dt>
-    <dd>HyperText Markup Language</dd>
-</dl>
-            </pre>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <dl>
@@ -1226,12 +1090,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;dd&gt;</code> tag provides details for a <code>&lt;dt&gt;</code> term in a <code>&lt;dl&gt;</code>. It’s a block-level element, explaining or defining the term. It’s semantic, ensuring accessibility for screen readers. Descriptions make lists informative and structured.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<dl>
-    <dt>Tag</dt>
-    <dd>A markup element</dd>
-</dl>
-            </pre>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;Tag&lt;/dt&gt;
+    &lt;dd&gt;A markup element&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <dl>
@@ -1246,12 +1108,10 @@ const lessons = [
         content: `
             <p>The <code>&lt;pre&gt;</code> tag displays text with fixed formatting, preserving spaces and line breaks. It’s a block-level element, ideal for code or ASCII art. It’s accessible, maintaining readability for technical content. Preformatted text ensures precise presentation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<pre>
+            <pre><code>&lt;pre&gt;
     Code block
         Indented
-</pre>
-            </pre>
+&lt;/pre&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <pre>
@@ -1266,9 +1126,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;code&gt;</code> tag marks inline code snippets, typically in a monospace font. It’s a semantic, inline element, used for commands or syntax within text. It aids accessibility by distinguishing code from prose. Code tags clarify technical content.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Use <code>print()</code> to output text.</p>
-            </pre>
+            <pre><code>&lt;p&gt;Use &lt;code&gt;print()&lt;/code&gt; to output text.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Use <code>print()</code> to output text.</p>
@@ -1280,9 +1138,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;kbd&gt;</code> tag indicates user input, like keyboard shortcuts, often in a monospace font. It’s a semantic, inline element, enhancing clarity for tutorials. It’s accessible, helping screen readers convey instructions. Keyboard tags improve technical documentation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Press <kbd>Ctrl+S</kbd> to save.</p>
-            </pre>
+            <pre><code>&lt;p&gt;Press &lt;kbd&gt;Ctrl+S&lt;/kbd&gt; to save.&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Press <kbd>Ctrl+S</kbd> to save.</p>
@@ -1294,9 +1150,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;samp&gt;</code> tag shows sample output from programs, like error messages, in a monospace font. It’s a semantic, inline element, used in technical docs. It aids accessibility by marking output clearly. Sample tags enhance instructional content.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Error: <samp>File not found</samp></p>
-            </pre>
+            <pre><code>&lt;p&gt;Error: &lt;samp&gt;File not found&lt;/samp&gt;&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Error: <samp>File not found</samp></p>
@@ -1308,9 +1162,7 @@ const lessons = [
         content: `
             <p>The <code>&lt;var&gt;</code> tag denotes variables in math or code, often italicized. It’s a semantic, inline element, clarifying placeholders or identifiers. It’s accessible, aiding screen readers in technical contexts. Variables enhance precision in documentation.</p>
             <p><strong>Code Example:</strong></p>
-            <pre>
-<p>Let <var>x</var> = 5;</p>
-            </pre>
+            <pre><code>&lt;p&gt;Let &lt;var&gt;x&lt;/var&gt; = 5;&lt;/p&gt;</code></pre>
             <p><strong>In Action:</strong></p>
             <section class="demo-box">
                 <p>Let <var>x</var> = 5;</p>
