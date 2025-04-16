@@ -3,55 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Course</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Just Wise Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>HTML Course</h1>
-        <nav class="tabs">
-            <button class="tab-btn active" data-tab="lessons" aria-label="View lessons">Lessons</button>
-            <button class="tab-btn" data-tab="test" aria-label="Take test">Test</button>
-            <button class="tab-btn" data-tab="library" aria-label="View HTML tag library">Library</button>
-        </nav>
+        <div class="logo">
+            <h1>JWL</h1>
+        </div>
     </header>
-
     <main>
-        <!-- Lessons Section -->
-        <section id="lessons" class="tab-content active">
-            <div class="lesson-nav">
-                <button class="nav-btn" id="prev-lesson" aria-label="Previous lesson" disabled>Previous</button>
-                <h2 id="lesson-title"></h2>
-                <button class="nav-btn" id="next-lesson" aria-label="Next lesson">Next</button>
-            </div>
-            <div id="lesson-content" class="lesson-body"></div>
-            <div class="lesson-links">
-                <!-- Generated dynamically by JavaScript -->
-            </div>
+        <section class="intro">
+            <h2>Welcome to Just Wise Love</h2>
+            <p>Explore the truth of the Bible through inspiring articles and resources.</p>
         </section>
-
-        <!-- Test Section -->
-        <section id="test" class="tab-content">
-            <div class="test-nav">
-                <button class="nav-btn" id="prev-test" aria-label="Previous test page" disabled>Previous</button>
-                <span id="test-progress">Page 1 of 5</span>
-                <button class="nav-btn" id="next-test" aria-label="Next test page">Next</button>
+        <section class="categories">
+            <div class="category">
+                <a href="characters.html">
+                    <h3>Characters</h3>
+                    <p>Learn from faithful Bible characters who pleased Jehovah.</p>
+                </a>
             </div>
-            <div id="test-content"></div>
-            <div id="test-summary" class="test-summary"></div>
-        </section>
-
-        <!-- Library Section -->
-        <section id="library" class="tab-content">
-            <input type="text" id="library-search" placeholder="Search tags..." aria-label="Search HTML tags">
-            <div id="library-content"></div>
+            <div class="category">
+                <a href="discussion.html">
+                    <h3>Discussion</h3>
+                    <p>Engage in meaningful Bible-based topics.</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="explained.html">
+                    <h3>Explained</h3>
+                    <p>Delve into the deeper teachings of the Bible.</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="foundation.html">
+                    <h3>Foundation</h3>
+                    <p>Understand the basic teachings of the Bible.</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="personality.html">
+                    <h3>Personality</h3>
+                    <p>Let Jehovah mold your character.</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="questions.html">
+                    <h3>Questions</h3>
+                    <p>Find answers to life’s big questions.</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="resources.html">
+                    <h3>Resources</h3>
+                    <p>Discover study aids for Bible understanding.</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="scriptures.html">
+                    <h3>Scriptures</h3>
+                    <p>Highlight key Bible verses.</p>
+                </a>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>© 2025 Just Wise Love. All rights reserved.</p>
+        <p>&copy; Just Wise Love</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
