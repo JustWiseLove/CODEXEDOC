@@ -21,6 +21,7 @@ header {
     margin: 0;
 }
 
+/* Fix logo link styling */
 .logo a {
     text-decoration: none !important;
     color: #000 !important;
@@ -41,66 +42,112 @@ footer {
     font-size: 14px;
 }
 
-/* Featured Section Styles */
-.featured {
-    margin: 20px 0;
+/* Index Page Styles */
+.intro {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.featured-title {
+.intro h2 {
     font-family: 'Audiowide', sans-serif;
     color: #333;
-    text-align: center;
-    margin-bottom: 10px;
 }
 
-.featured .card {
-    margin-bottom: 10px;
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-/* Card Styles */
-.card {
+.category {
     background-color: #d3d3d3;
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
+    text-align: center;
     transition: transform 0.3s;
 }
 
-.card:hover {
+.category:hover {
     transform: scale(1.05);
 }
 
-.card-title {
-    display: block;
-    padding: 15px 20px;
-    font-size: 24px;
+.category a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category h3 {
     font-family: 'Audiowide', sans-serif;
+    margin: 0 0 10px;
+}
+
+.category p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Characters Page Styles */
+.characters-page .page-title {
+    font-family: 'Audiowide', sans-serif;
+    color: #000;
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.character-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px; /* Limit the width of the character list */
+    margin: 0 auto; /* Center the character list */
+}
+
+.character {
+    width: 100%;
+}
+
+details[open] .character-content {
+    display: block; /* Ensure content is visible when details is open */
+}
+
+.character-button {
+    display: block;
+    width: 100%; /* Full width within the constrained character-list */
+    padding: 15px 20px;
+    font-size: 18px;
     background-color: #d3d3d3;
     border: none;
     text-align: left;
     cursor: pointer;
+    border-radius: 5px 5px 0 0; /* Rounded top corners only */
     transition: background-color 0.3s;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.card-title:hover {
+.character-button:hover {
     background-color: #b0b0b0;
 }
 
-.card-title::-webkit-details-marker {
+/* Style the default marker (triangle) for <summary> */
+.character-button::-webkit-details-marker {
     color: #333;
 }
 
-.card-title::marker {
+.character-button::marker {
     color: #333;
 }
 
-.card-content {
-    display: none;
+.character-content {
+    display: none; /* Hidden by default, shown when details is open */
     padding: 20px;
     background-color: #e0e0e0;
-}
-
-details[open] .card-content {
-    display: block;
+    border-radius: 0 0 5px 5px; /* Rounded bottom corners only */
+    width: 100%; /* Full width within the constrained character-list */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .scripture {
@@ -115,18 +162,16 @@ details[open] .card-content {
     margin: 5px 0;
 }
 
-/* Articles Section Styles */
-.articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* Placeholder styles for other pages */
+.discussion-page, .explained-page, .foundation-page, 
+.personality-page, .questions-page, .resources-page, .scriptures-page {
+    /* Common styles for other pages */
 }
 
-/* Placeholder styles for other pages */
-.characters-page .page-title, .discussion-page .page-title, 
-.explained-page .page-title, .foundation-page .page-title, 
-.personality-page .page-title, .questions-page .page-title, 
-.resources-page .page-title, .scriptures-page .page-title {
+.discussion-page .page-title, .explained-page .page-title, 
+.foundation-page .page-title, .personality-page .page-title, 
+.questions-page .page-title, .resources-page .page-title, 
+.scriptures-page .page-title {
     font-family: 'Audiowide', sans-serif;
     color: #000;
     font-size: 36px;
