@@ -102,7 +102,12 @@ footer {
     width: 100%;
 }
 
+.character-toggle {
+    display: none;
+}
+
 .character-button {
+    display: block;
     width: 100%;
     padding: 15px;
     font-size: 18px;
@@ -119,14 +124,26 @@ footer {
 }
 
 .character-content {
-    display: none;
-    padding: 20px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
     background-color: #e0e0e0;
     border-radius: 5px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
 
-.character-content.active {
-    display: block;
+.character-toggle:checked + .character-button + .character-content {
+    max-height: 500px; /* Adjust as needed for content */
+    padding: 20px;
+}
+
+/* Optional hover effect for desktop */
+@media (min-width: 768px) {
+    .character-button:hover + .character-content,
+    .character-content:hover {
+        max-height: 500px;
+        padding: 20px;
+    }
 }
 
 .scripture {
