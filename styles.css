@@ -63,7 +63,7 @@ footer {
 .section-title {
     font-family: 'Audiowide', sans-serif;
     color: #333;
-    font-size: 24px; /* Reduced from 28px */
+    font-size: 24px;
     text-align: center;
     margin: 20px 0;
 }
@@ -160,26 +160,43 @@ details[open] .item-content {
     border-radius: 0 0 5px 5px; /* Rounded bottom corners only */
     width: 100%; /* Full width within the constrained item-list */
     box-sizing: border-box; /* Include padding in width calculation */
-    text-align: center; /* Center all text within item-content */
+    text-align: center !important; /* Force centering */
 }
 
-/* Ensure lists and scriptures are also centered */
+/* Ensure all child elements are centered */
 .item-content p,
 .item-content li,
-.item-content .scripture {
-    text-align: center;
+.item-content strong,
+.item-content .scripture,
+.item-content .scripture p {
+    text-align: center !important; /* Force centering for all text elements */
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Center unordered lists and remove default padding */
 .item-content ul {
     list-style-position: inside; /* Center bullet points */
     padding: 0;
+    margin: 0 auto;
+    text-align: center !important; /* Ensure centering */
+}
+
+/* Ensure list items are centered and displayed as blocks */
+.item-content ul li {
+    display: block;
+    text-align: center !important;
+    margin: 10px 0;
 }
 
 .scripture {
     background-color: #c0c0c0;
     padding: 10px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
+    display: inline-block; /* Allow scripture block to shrink-wrap content for centering */
 }
 
 .scripture p {
