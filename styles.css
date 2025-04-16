@@ -21,10 +21,10 @@ header {
     margin: 0;
 }
 
-/* Ensure the logo link has no underline and inherits the correct color */
+/* Fix logo link styling */
 .logo a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none !important; /* Override default link underline */
+    color: #000 !important; /* Force black color to match theme */
 }
 
 main {
@@ -110,6 +110,10 @@ footer {
     width: 100%;
 }
 
+details[open] .character-content {
+    display: block; /* Ensure content is visible when details is open */
+}
+
 .character-button {
     display: block;
     width: 100%;
@@ -137,11 +141,12 @@ footer {
 }
 
 .character-content {
+    display: none; /* Hidden by default, shown when details is open */
     padding: 20px;
     background-color: #e0e0e0;
     border-radius: 5px;
-    width: 100%; /* Ensure content matches the button width */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .scripture {
