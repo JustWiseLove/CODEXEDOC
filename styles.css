@@ -89,8 +89,8 @@ footer {
     font-size: 14px;
 }
 
-/* Characters Page Styles */
-.characters-page .page-title {
+/* Universal Page Styles */
+.page-title {
     font-family: 'Audiowide', sans-serif;
     color: #000;
     font-size: 36px;
@@ -98,25 +98,25 @@ footer {
     text-align: center;
 }
 
-.character-list {
+.item-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 800px; /* Limit the width of the character list */
-    margin: 0 auto; /* Center the character list */
+    max-width: 800px; /* Limit the width of the item list */
+    margin: 0 auto; /* Center the item list */
 }
 
-.character {
+.item {
     width: 100%;
 }
 
-details[open] .character-content {
+details[open] .item-content {
     display: block; /* Ensure content is visible when details is open */
 }
 
-.character-button {
+.item-button {
     display: block;
-    width: 100%; /* Full width within the constrained character-list */
+    width: 100%; /* Full width within the constrained item-list */
     padding: 15px 20px;
     font-size: 18px;
     background-color: #d3d3d3;
@@ -128,25 +128,25 @@ details[open] .character-content {
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.character-button:hover {
+.item-button:hover {
     background-color: #b0b0b0;
 }
 
 /* Style the default marker (triangle) for <summary> */
-.character-button::-webkit-details-marker {
+.item-button::-webkit-details-marker {
     color: #333;
 }
 
-.character-button::marker {
+.item-button::marker {
     color: #333;
 }
 
-.character-content {
+.item-content {
     display: none; /* Hidden by default, shown when details is open */
     padding: 20px;
     background-color: #e0e0e0;
     border-radius: 0 0 5px 5px; /* Rounded bottom corners only */
-    width: 100%; /* Full width within the constrained character-list */
+    width: 100%; /* Full width within the constrained item-list */
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
@@ -163,15 +163,17 @@ details[open] .character-content {
 }
 
 /* Placeholder styles for other pages */
-.discussion-page, .explained-page, .foundation-page, 
-.personality-page, .questions-page, .resources-page, .scriptures-page {
+.characters-page, .discussion-page, .explained-page, 
+.foundation-page, .personality-page, .questions-page, 
+.resources-page, .scriptures-page {
     /* Common styles for other pages */
 }
 
-.discussion-page .page-title, .explained-page .page-title, 
-.foundation-page .page-title, .personality-page .page-title, 
-.questions-page .page-title, .resources-page .page-title, 
-.scriptures-page .page-title {
+/* Ensure page-title is consistent across all pages */
+.characters-page .page-title, .discussion-page .page-title, 
+.explained-page .page-title, .foundation-page .page-title, 
+.personality-page .page-title, .questions-page .page-title, 
+.resources-page .page-title, .scriptures-page .page-title {
     font-family: 'Audiowide', sans-serif;
     color: #000;
     font-size: 36px;
