@@ -23,8 +23,8 @@ header {
 
 /* Fix logo link styling */
 .logo a {
-    text-decoration: none !important; /* Override default link underline */
-    color: #000 !important; /* Force black color to match theme */
+    text-decoration: none !important;
+    color: #000 !important;
 }
 
 main {
@@ -116,8 +116,8 @@ details[open] .character-content {
 
 .character-button {
     display: block;
-    width: 100%;
-    padding: 15px;
+    width: calc(100% - 40px); /* Match the content width by subtracting padding */
+    padding: 15px 20px; /* Match padding of content for alignment */
     font-size: 18px;
     background-color: #d3d3d3;
     border: none;
@@ -145,7 +145,7 @@ details[open] .character-content {
     padding: 20px;
     background-color: #e0e0e0;
     border-radius: 5px;
-    width: 100%;
+    width: calc(100% - 40px); /* Subtract padding to match button width */
     box-sizing: border-box;
 }
 
